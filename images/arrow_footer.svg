@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 56 56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #ddb96d;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #ddb96d;
+      }
+
+      .cls-4 {
+        mask: url(#mask);
+      }
+    </style>
+    <mask id="mask" x="21.99" y="21.99" width="12.02" height="12.02" maskUnits="userSpaceOnUse">
+      <g id="mask0_1695_414" data-name="mask0 1695 414">
+        <path class="cls-1" d="m34.01,33.99l-.02-12-12,.02.02,12,12-.02Z"/>
+      </g>
+    </mask>
+  </defs>
+  <circle class="cls-3" cx="28" cy="28" r="27.5"/>
+  <g class="cls-4">
+    <path class="cls-2" d="m28.52,22.22l5.26,5.24c.3.3.3.75,0,1.05-.3.3-.75.3-1.05,0l-3.98-3.97v8.7c.01.45-.29.75-.74.75s-.75-.3-.75-.75v-8.7s-3.98,3.98-3.98,3.98c-.3.3-.75.3-1.05,0-.15-.15-.23-.3-.23-.52s.07-.38.22-.53l5.24-5.26c.3-.3.75-.3,1.05,0Z"/>
+  </g>
+</svg>
