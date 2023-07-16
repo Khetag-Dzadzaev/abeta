@@ -37,9 +37,9 @@ var swiper1 = new Swiper(document.getElementById('catalog'), {
         slidesPerView: 3,
         centeredSlides: true,
       },
-      817:{
+      768:{
         slidesPerView: 2,
-
+        centeredSlides: true,initialSlide: -1,
       },
 
 
@@ -144,9 +144,21 @@ var swiper1 = new Swiper(document.getElementById('catalog'), {
 
 
   let swiper4 = new Swiper(document.getElementById('penswiper'), {
-    slidesPerView: 4,
-    loop:true,
-    initialSlide: 2,
+
+    breakpoints: {
+      // when window width is >= 320px
+      1001: {
+        slidesPerView: 4,
+        loop:true,
+        initialSlide: 2,
+      },
+      320: {
+        slidesPerView: 2,
+        loop:true,
+        initialSlide: 2,
+        spaceBetween: 150,
+      },
+    },
 
     navigation: {
       nextEl: ".choice__accessories__button_right",

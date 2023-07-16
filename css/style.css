@@ -198,9 +198,10 @@
 .hero-block{
   background-image: url(/images/hero_bg.png);
   width: 100%;
-  height: 890px;
+  height: 800px;
   background-repeat: no-repeat;
   background-position: top, center;
+  background-size: cover;
 }
 
 
@@ -337,15 +338,19 @@
 
 .advantages{
     background-color: #F8F8F8;
-    height: 962px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top:10%;
+    margin-bottom:10%;
 }
 
 .advantages_title__info{
-    padding-top: 10%;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .advantages_title{
@@ -364,6 +369,7 @@
     line-height: 26px;
     color: #3D3B3B;
     text-align: center;
+    width: 70%;
 }
 
 .advantages_info__door{
@@ -373,19 +379,28 @@
     margin-top: 5%;
 }
 
+.info_door{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 
 
 .info_door__characteristic{
     width: 100%;
-
-
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
 }
 
 .door_characteristic__img_and_text{
     display: flex;
     align-items: center;
     gap: 5%;
-    
+    justify-content: center;
 }
 
 .locks{
@@ -393,20 +408,15 @@
 }
 
 .info_door__right{
-  margin-left: auto;
+  margin-left: 1%;
 }
 
 .door{
     width: 100%;
-
-    background-image: url(/images/doors.svg);
-    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex: 1 1 100%;
-    padding: 0 8%;
-    background-repeat: no-repeat;
-    background-position: center;
+    align-items: center;
 }
 
 
@@ -418,6 +428,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    width: 100%;
 }
 
 .info_door_text{
@@ -430,41 +441,11 @@
     line-height: 26px;
 }
 
-.door_plus{
-    position: absolute;
-    border-radius: 100%;
-    background: var(--linear, linear-gradient(180deg, #EBCB88 0%, #CDA44E 100%));
-    background-image: url(/images/icon-plus.svg);
-    width: 48px;
-    height: 48px;
-    border: none;
-}
-
-.position_1{
-  bottom: 13.5%;
-  right: 33%;
-}
-
-.position_2{
-  left: 27%;
-  top: 45%;
-}
-
-.position_3{
-    right: 39.5%;
-    top: 28%;
-}
-
-.position_4{
-    right: 26%;
-    top: -1.6%;
-}
 
 .door_button{
-    position: absolute;
     border-radius: 48px;
     background: var(--linear, linear-gradient(180deg, #EBCB88 0%, #CDA44E 100%));
-    width: 100%;
+    width: 342px;
     height: 64px;
     bottom: 0;
     border: none;
@@ -475,7 +456,7 @@
 
 .door_button_marker{
     list-style-type: inherit;
-    width: 100%;
+    width: 65%;
     color: var(--ffffff, #FFF);
 }
 
@@ -493,7 +474,6 @@
 .advantages_of_cooperation{
     background-image: url(/images/interior-shot-of-a-modern-house-clothing-room.png);
     height: 894px;
-    background-color: #220C0C;
 }
 
 .advantages_of_cooperation_backgroung_color{
@@ -518,7 +498,7 @@
 
 .advantages_of_cooperation__button{
     margin-top: 8%;
-    width: 30%;
+    width: 400px;
     height: 64px;
     border-radius: 48px;
     background: var(--linear, linear-gradient(180deg, #EBCB88 0%, #CDA44E 100%));
@@ -652,20 +632,17 @@
 }
 
 .door_img_block{
-    background-image: url(/images/Rectangle.png);
-    background-repeat: no-repeat;
-    width: 250%;
+    width: 100%;
     height: 200px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding-left: 15%;
 
 }
 
 .catalog__door_img{
-    width: 27%;
-    margin-right: auto;
+  width: 100%;
 }
 
 .door_color_button{
@@ -965,6 +942,10 @@
     justify-content: space-evenly;
 }
 
+.servise_title__block_bg_color > .container-left{
+  margin-right: 2%;
+}
+
 .servis_discount_block{
     width: 100%;
     height: 654px;
@@ -1011,133 +992,12 @@
     list-style-type:disc;
 }
 
-.servis_discount_info{
-    background-image: url(/images/photo-right__servis.png);
-    width: 100%;
-    height: 498px;
+.servis_discount_block{
+  background-image: url(/images/photo-right__servis.png);
+  width: 100%;
+    height: 655px;
     position: relative;
     background-size: cover;
-
-}
-
-.servis_discount_bg_color{
-    width:100%;
-    height: 156px;
-    background: var(--ccb-178, #DDB96D);
-}
-
-.servis_discount_flex{
-  height: 156px;
-  display: flex;
-  gap: 2%;
-  align-items: center;
-}
-
-
-
-.servis_discount_img__dor{
-    z-index: 1;
-    position: absolute;
-    bottom: 0;
-    left: 490px;
-}
-
-.servis_discount__procent{
-    color: var(--ffffff, #FFF);
-    font-size: 64px;
-    font-family: Jost;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding-left: 5%
-
-}
-.servis_discount__procent_texet{
-    color: var(--ffffff, #FFF);
-    font-size: 24px;
-    font-family: Jost;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.servis_discount_info__button_plus__img{
-    border: none;
-    border-radius: 100%;
-}
-
-.servis_discount_info__button_plus{
-    border: none;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 48px;
-    height: 48px;
-}
-
-.servis_discount_info__blocks_text{
-    color: var(--3-d-3-b-3-b, #505050);
-    font-size: 16px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    border-radius: 24px;
-    text-align: center;
-    opacity: 0.800000011920929;
-    background: #FFF;
-    box-shadow: 0px 4px 20px 0px #ECECEC;
-    height: 52px;
-    padding: 20px 10px 20px 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.servis_discount_info__button_plus{
-    position: absolute;
-    z-index: 1;
-    top: -10%;
-    left: -6%;
-    border: none;
-}
-
-.servis_discount_info__button_plus_right{
-    position: absolute;
-    left: 85%;
-    z-index: 1;
-    top: -25%;
-}
-
-.servis_position{
-  display: flex;
-  flex-direction: column;
-  width: 608px;
-  height: 470px;
-  gap: 10%;
-  align-items: center;
-  justify-content: center;
-  margin-left: 1.1%;
-}
-
-.servis_position_1{
-    position: relative;
-    margin-left: 60%;
-    
-}
-
-.servis_position_2{
-    position: relative;
-    margin-right: 52%;
-    margin-top: 1.8%;
-}
-
-.servis_position_3{
-    position: relative;
-    margin-left: 42%;
 }
 /*creat_your_door*/
 
@@ -1160,9 +1020,7 @@
     margin-top: 2%;
     width: 100%;
     height: 748px;
-    border-radius: 24px;
-    background: #FFF;
-    box-shadow: 0px 4px 20px 0px #ECECEC;
+    
     padding: 1% 2%;
 }
 
@@ -1170,6 +1028,9 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 2% 0;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 4px 20px 0px #ECECEC;
 }
 
 .creat_flex{
@@ -1316,7 +1177,7 @@
   border-radius: 100%;
   border:none;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 40px;
   height: 40px;
   background: none;
   display: flex;
@@ -1332,7 +1193,7 @@
   border-radius: 100%;
   border:none;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 40px;
   height: 40px;
   background: none;
   transform: rotateY(180deg);
@@ -1346,12 +1207,13 @@
 }
 
 .choice__accessories__button_img{
-  width: 80%;
+  width: 100%;
 }
 
 .choice__accessories__arrow_hover:hover{
   background-color: #fff;
-  width: 65px;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
   opacity: 50%;
 }
@@ -1597,7 +1459,7 @@
 }
 
 .about_button{
-    width: 50%;
+    width: 300px;
     height: 64px;
     border-radius: 48px;
     background: var(--linear, linear-gradient(180deg, #EBCB88 0%, #CDA44E 100%));
@@ -1657,11 +1519,18 @@
 .our_contact__phone{
     display: flex;
     align-items: center;
+    flex-direction: column;
     height: 30px;
-    border-bottom: 2px dashed  #78F362;
-    width: 16%;
+    width: 205px;
     gap: 5%;
     margin-right: 5%;
+}
+
+.our_contac_line{
+
+  border-bottom: 2px dashed  #78F362;
+    width: 205px;
+
 }
 
 .our_contact__info_flex{
@@ -1700,6 +1569,7 @@
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
+    
 }
 
 .our_contact__mail_adres{
@@ -1731,7 +1601,7 @@
     align-items: center;
     height: 20%;
     gap: 1%;
-    width: 24%;
+    width: 320px;
 }
 
 .our_contact__soc_net{
@@ -1817,7 +1687,7 @@
 }
 
 .contact_us__input{
-    width: 45%;
+    width: 400px;
     height: 64px;
     padding: 1% 5%;
     border-radius: 8px;
@@ -1839,7 +1709,7 @@
     font-weight: 800;
     line-height: 24px;
     list-style-type: disc;
-    width: 30%;
+    width: 50px;
     padding-left: 25%;
 }
 
@@ -1852,9 +1722,8 @@
     background: var(--linear, linear-gradient(180deg, #EBCB88 0%, #CDA44E 100%));
     box-shadow: 0px 3px 0px 0px #BB9441;
     border:none;
-    width: 35%;
-    padding: 2.5% 0;
-    padding-right: 10%;
+    width: 300px;
+    padding: 20px 0;
 }
 
 .contact_us__approval{

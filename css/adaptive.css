@@ -1,8 +1,69 @@
+@media(max-width:1300px){
+  .advantages_of_cooperation_blocks {
+    margin-top: 5%;
+    display: grid;
+    gap: 5%;
+    padding: 0 1%;
+    grid-template-columns: repeat(3,2fr);
+  }
+
+  .our_contact__info_flex{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 2%;
+  }
+
+  .about_flex{
+    padding: 0 2%;
+  }
+
+  .creat_door__block{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .our_contact__soc_net{
+    margin-top: 2%;
+  }
+}
+
 @media(max-width:1262px){
   .hero__swiper {
     width: 70%;
+    
   }
 }
+
+@media(max-width:1280px){
+  .servis{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.servise_title__block_bg_color > .container-left{
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.servis_discount_block{
+  background-image: url(/images/photo-right__servis.png);
+    width: 100%;
+    height: 655px;
+    position: relative;
+    background-size: cover;
+    background-position: left;
+}
+}
+
+
+@media(max-width:1215px){
+  .line{
+    border-bottom: 2px dashed  #78F362;
+    width: 65%;
+  }
+}
+
 
 @media(max-width:1195px){
   .header_menu__list{
@@ -11,10 +72,161 @@
     width: 44%;
     padding-left: 19.5%;
   }
+  .line{
+    border-bottom: 2px dashed  #78F362;
+    width: 75%;
+  }
+}
+
+@media(max-width:1115px){
+  .line{
+    border-bottom: 2px dashed  #78F362;
+    width: 90%;
+  }
+}
+
+@media(max-width:1050px){
+  .line{
+    border-bottom: 2px dashed  #78F362;
+    width: 80%;
+  }
 }
 
 @media(max-width:1000px){
-  
+
+  .creat_your_door__block{
+    margin-top: 2%;
+    width: 100%;
+    height: 1400px;
+    
+    padding: 1% 2%;
+}
+
+.block_door__text{
+    color: #505050;
+    text-align: center;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 9%;
+}
+  .creat_door__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 2%;
+    border-radius: 24px;
+    background: #fff;
+    height: 80%;
+    box-shadow: 0px 4px 20px 0px #ECECEC;
+
+}
+
+.choice_door__blocks{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.creat_door__block_info{
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+.choice__door__block{
+  margin-top: 17%;
+}
+
+.creat_door__block_door{
+  width: 100%;
+}
+
+.choice__door_lable{
+  width: 100%;
+  align-items: center;
+}
+
+.choice__color_accessories{
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  height: 100%;
+}
+
+.creat_door_button{
+  margin-top: 50%;
+  width: 140%;
+  height: 150%;
+  margin-left: -30%;
+  padding: 8% 12%;
+}
+
+.choice__color{
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  height: 20%;
+  width: 100%;
+}
+
+.choice__dor_color{
+  margin-top: 5%;
+  align-items: center;
+}
+
+  .hero-block{
+    background-image: url(/images/hero_bg.png);
+    width: 100%;
+    height: 750px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
+
+  .advantages_of_cooperation{
+    background-image: url(/images/interior-shot-of-a-modern-house-clothing-room.png);
+    height: 1000px;
+}
+
+.hero_mark{
+  margin-left: 2%;
+}
+
+
+.hero__swiper{
+  background-color: #F8F8F8;
+  border-radius: 10%;
+  padding: 2%;
+  opacity: 0.9;
+  margin-left: 0;
+  margin-right: 2%;
+}
+
+.swiper_hero{
+  opacity: 2;
+}
+
+
+.advantages_of_cooperation_backgroung_color{
+  background-color: #220C0C;
+  opacity: 0.89;
+  display: flex;
+  align-items: center;
+  height: 1000px;
+  flex-direction: column;
+}
+
+  .advantages_of_cooperation_blocks {
+    margin-top: 5%;
+    display: grid;
+    gap: 1%;
+    padding: 0 2%;
+    grid-template-columns: repeat(2,2fr);
+  }
+
   .burger_elm{
     height: 1000px;
     transform: translateX(-100%);
@@ -46,8 +258,7 @@
     transform: translateX(0%);
   }
 
-  .header_menu{
-  }
+
 
   .header_menu__list{
     display: block;
@@ -89,13 +300,66 @@
     gap: 50px;
   }
 
+  .footer_flex{
+    padding: 0 2%;
+  }
+
+  .advantages_info__door{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
 }
 
-@media(max-width:902px){
+.info_door{
+  display: flex;
+  width: 80%;
+  gap: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.info_door__right{
+  margin-right: 0;
+  margin-top: 10%;
+}
+
+.info_door__left{
+  margin-bottom: 10%;
+}
+
+.our_contact__block{
+  flex-direction: column;
+}
+
+.map{
+  width: 100%;
+}
+
+.contact_us{
+  width: 100%;
+  padding: 0;
+}
+
+.form_flex{
+  align-items: center;
+}
+
+}
+
+@media(max-width:975px){
   .hero__swiper{
     width: 55%;
   }
 }
+
+@media(max-width:920px){
+  .hero__swiper{
+    width: 60%;
+  }
+}
+
 
 
 
