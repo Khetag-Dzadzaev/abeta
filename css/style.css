@@ -1396,12 +1396,12 @@
   background-image: url(/images/close-up-of-metal-doorknob-on-blurred-background-of-home-interior\ \(1\)\ 1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 145%;
+  width: 100%;
   height: 658px;
 }
 
 .about__number{
-  width: 100%;
+  width: 50%;
 }
 
 .about__background_color{
@@ -1423,7 +1423,7 @@
 }
 
 .about_info{
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
@@ -1476,6 +1476,14 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.about_number{
+  height: 100%;
+}
+
+.about_info > .container-left{
+  margin-right: 2%;
 }
 
 .about_number_text{

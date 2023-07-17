@@ -5,6 +5,16 @@
     gap: 5%;
     padding: 0 1%;
     grid-template-columns: repeat(3,2fr);
+
+    
+  }
+
+  .about_background__img{
+    background-image: url(/images/close-up-of-metal-doorknob-on-blurred-background-of-home-interior\ \(1\)\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 104%;
+    height: 658px;
   }
 
   .our_contact__info_flex{
@@ -94,6 +104,33 @@
 
 @media(max-width:1000px){
 
+
+
+    .background_color__size .container_right{
+    height: 100%;
+  }
+
+  .about_number{
+    height: 100%;
+  }
+
+  .choice__accessories_pen{
+    padding: 0;
+  }
+
+  .choice__accessories__button,.choice__accessories__button_right{
+    top: 28%;
+  }
+
+  .choice__accessories_pen{
+    width: 75%;
+  }
+
+  .info_door_text{
+    text-align: center;
+    width: 80%;
+  }
+
   .creat_your_door__block{
     margin-top: 2%;
     width: 100%;
@@ -110,7 +147,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
-    margin: 9%;
+    margin-top: 9%;
 }
   .creat_door__block{
     display: flex;
@@ -119,9 +156,13 @@
     padding: 2% 2%;
     border-radius: 24px;
     background: #fff;
-    height: 80%;
+    height: 1900px;
     box-shadow: 0px 4px 20px 0px #ECECEC;
 
+}
+
+.creat_your_door{
+  height: 2050px;
 }
 
 .choice_door__blocks{
@@ -129,13 +170,6 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.creat_door__block_info{
-  display: flex;
-  align-items: center;
-  gap: 10%;
-}
-
 .choice__door__block{
   margin-top: 17%;
 }
@@ -150,25 +184,31 @@
 }
 
 .choice__color_accessories{
-  display: flex;
-  flex-direction: column;
-  gap: 5%;
-  height: 100%;
+  margin-top: 10%;
+}
+
+.choice__accessories{
+  margin-top: 10%;
+}
+
+.creat_door__block_info{
+  width: 100%;
 }
 
 .creat_door_button{
-  margin-top: 50%;
-  width: 140%;
-  height: 150%;
-  margin-left: -30%;
-  padding: 8% 12%;
+  margin-top: 15%;
+  width: 400px;
+  height: 100%;
+  padding: 4% 5%;
+  display: flex;
+  justify-content: center;
 }
 
 .choice__color{
   display: flex;
   flex-direction: column;
   gap: 10%;
-  height: 20%;
+  align-items: flex-start;
   width: 100%;
 }
 
@@ -228,21 +268,23 @@
   }
 
   .burger_elm{
-    height: 1000px;
-    transform: translateX(-100%);
+    height: 300px;
+    transform: translateX(-200%);
   }
 
     .open{
     display: flex;
     width: 300px;
-    height: 1000px;
+    height: 300px;
     align-items: center;
-    position: fixed;
+    position: relative;
     justify-content: center;
+    border-radius: 10%;
     top: -10px;
     right: 0;
     z-index: 2;
     background-color: #DDB96D;
+    opacity: 0.8;
   }
 
   .burger_elm{
@@ -262,6 +304,7 @@
 
   .header_menu__list{
     display: block;
+
   }
 
   .header_menu__phone{
@@ -278,9 +321,13 @@
     margin-left: 10%;
   }
 
+  .choice__accessories__button_img{
+    width: 100%;
+  }
+
   .burger{
-    top: 45px;
-    right: 50px;
+    top: 50px;
+    left: 85%;
     width: 50px;
     height: 50px;
     z-index: 50;
@@ -290,9 +337,13 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-    position: fixed;
+    position: relative;
     opacity: 0.9;
     border-radius: 50%;
+  }
+
+  .active{
+    left: 250px;
   }
 
   .hero{
@@ -316,13 +367,27 @@
   display: flex;
   width: 80%;
   gap: 5%;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.info_door__characteristic{
+  align-items: center;
+}
+
+.door_characteristic__img_and_text{
+  flex-direction: column;
+  align-items: center;
+}
+
 .info_door__right{
-  margin-right: 0;
+  margin: 0;
   margin-top: 10%;
+}
+
+.door_characteristic_text{
+  text-align: center;
 }
 
 .info_door__left{
@@ -359,6 +424,691 @@
     width: 60%;
   }
 }
+
+@media(max-width:768px){
+
+  .hero-block{
+    background-image: url(/images/hero_bg.png);
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: top, center;
+    background-size: cover;
+  }
+
+  .door__img{
+  }
+
+  .hero_mark {
+    width: 150px;
+    height: 530px;
+  }
+
+  .hero_mark__title{
+    font-family: Jost;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    line-height: 57.8px;
+    color: #2E2E2E;
+    margin-top: 21%;
+  }
+
+  .hero_title{
+    font-size: 20px;
+    line-height:30px;
+  }
+
+  .mark_list{
+    width: 121px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    line-height: 24px;
+    color: #2E2E2E;
+  }
+
+  .hero_text{
+    font-size: 14px;
+  }
+
+  .gold_big{
+    font-size: 20px;
+  }
+
+  .hero_button__text{
+    font-size: 16px;
+  }
+
+  .hero_button__img{
+    width: 40px;
+  }
+
+  .hero__swiper{
+    height: 220px;
+  } 
+
+  .hero__swiper{
+    width: 40%;
+    margin-right: 0;
+    margin-left: 25px;
+  }
+
+  .hero_button{
+    width: 180px;
+    height: 50px;
+  }
+
+  .hero_text{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #3D3B3B;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  .advantages{
+    margin-top: 5% 0;
+  }
+
+  .advantages_title{
+    font-size: 22px;
+  }
+
+  .advantages_text{
+    font-size: 14px;
+    width: 60%;
+  }
+
+  .door_characteristic_text{
+    font-size: 20px;
+  }
+
+  .info_door_text{
+    font-size: 14px;
+    width: 80%;
+  }
+
+  .advantages_of_cooperation__title{
+    font-size: 22px;
+  }
+
+  .advantages_of_cooperation_block__number{
+    font-size: 30px;
+  }
+
+  .advantages_of_cooperation_block__text{
+    font-size: 14px;
+  }
+
+  .advantages_of_cooperation{
+    height: 760px;
+  }
+
+  .catalog_doors_title, .servis_discount_title__text,.abouy_number_title,.implemented_projects_title,.our_contact__title{
+    font-size: 22px;
+  }
+
+  .catalog_accessories_title,.creat_dor__title,.about_title,.contact_us__title{
+    font-size: 20px;
+  }
+
+  .advantages_of_cooperation__button{
+    width: 300px;
+  }
+
+  .advantages_of_cooperation__button_text, .servis_discount_title__text2,.about_button_marker,.contact_us__input_top,.contact_us__input{
+    font-size: 14px;
+  }
+
+  .door_inner_shell__title, .door_inner_shell__text, .door_inner_shell__characteristic, .door_inner_shell_cost__title, .door_inner_shell_characteristic__text, .door_color_title, .door_glass_title,.block_accessories__text,.servis_discount_title__button,.block_door__text,.choice__text, .about_text,.about_number_text,.projects_text,.our_contact_gps,.our_contact__mail_adres,.our_contact_phone,.our_contact__soc_net,.contact_us__mark
+  { 
+    font-size: 14px;
+  }
+
+  .servis_discount_title__button{
+    width: 250px;
+  }
+
+  .door_inner_shell_cost,.door_inner_button_text{
+    font-size: 16px;
+  }
+
+  .about_button{
+    width: 240px;
+  }
+
+  .door__img{
+    width: 400px;
+    margin: 0 2%;
+  }
+
+  .servis_discount_title__text2{
+    width: 100%;
+  }
+
+  .advantages_title__info {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .our_contac__img_tel{
+    display: flex;
+    align-items: center;
+    grid-area: 5%;
+  }
+
+  .our_contac_line{
+    width: 140px;
+  }
+
+  .padding{
+    padding: 14px 20px;
+  }
+
+  .contact_us__button{
+    width: 250px;
+  }
+
+  .contact_us__mark{
+    width: 42px;
+  }
+
+  .advantages_of_cooperation{
+    height: 1000px;
+  }
+
+  .advantages_of_cooperation_backgroung_color{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .servis_discount_block{
+    background-image: url(/images/photo-right__servis_2.png);
+    background-size: contain;
+    background-position: top
+    ;
+    background-repeat: no-repeat;
+    height: 780px;
+  }
+
+  .hero_arrow{
+    display: none;
+  }
+
+}
+
+
+@media(max-width:740px){
+  .servis_discount_block{
+    height: 755px;
+  }
+}
+@media(max-width:720px){
+  .servis_discount_block{
+    height: 735px;
+  }
+  .creat_door__block{
+    height: 1800px;
+  }
+  .creat_your_door{
+    height: 1900px;
+  }
+}
+@media(max-width:700px){
+  .servis_discount_block{
+    height: 710px;
+  }
+}
+@media(max-width:660px){
+  .servis_discount_block{
+    height: 670px;
+  }
+
+  .creat_door__block{
+    height: 1700px;
+  }
+  .creat_your_door{
+    height: 1800px;
+  }
+}
+@media(max-width:620px){
+  .servis_discount_block{
+    height: 630px;
+  }
+  .block_door__text{
+    margin-top: 12%;
+  }
+}
+@media(max-width:600px){
+  .servis_discount_block{
+    height: 600px;
+  }
+
+  .advantages_info__door{
+    margin: 20% 0;
+  }
+
+  
+  
+}
+
+@media(max-width:560px){
+  .advantages_of_cooperation_blocks{
+    grid-template-columns: 1fr ;
+  }
+}
+
+@media(max-width:560px){
+  .servis_discount_block{
+    height: 570px;
+  }
+  .creat_door__block{
+    height: 1600px;
+  }
+  .creat_your_door{
+    height: 1700px;
+  }
+
+  .about_background__img, .background_color__size {
+    background: none;
+  }
+
+  .about_button{
+    width: 200px;
+    padding: 5px 35px;
+  }
+
+  .about__background_color .container_right{
+    margin: 0;
+    height: 300px;
+  }
+
+  .about_flex{
+    gap: 10%;
+    padding: 0 2%;
+    flex-direction: column;
+  }
+
+  .about_number{
+    display: flex;
+    width: 96%;
+    flex-direction: row;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+  }
+
+  .about__number{
+    height: 200px;
+    width: 100%;
+  }
+
+  .bottom-line{
+    border-bottom: none;
+    width: 35%;
+    height: 150px;
+  }
+
+  .about_number_blok{
+    gap: 5%;
+    padding: 2%;
+  }
+
+  .about_block_width{
+    height: 150px;
+  }
+  .contact_us__input{
+    width: 250px;
+    height: 45px;
+  }
+
+  .about_info .container-left{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__background_color {
+    height: 650px;
+  }
+
+  .about_info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+  }
+
+  .contact_us__input_block{
+    width: 280px;
+    
+  }
+
+  .our_contact__gps{
+    width: 62%;
+  }
+
+  .abouy_number_title,.about_number_text{
+    text-align: center;
+  }
+  .about_number_text{
+    width: 100%;
+  }
+
+  .contact_us__button{
+    width: 200px;
+    padding: 15px 0;
+  }
+
+  .contact_us__mark{
+    padding-left: 15%;
+  }
+
+  .form_flex{
+    align-items: center;
+  }
+}
+
+@media(max-width:563px){
+  .hero__swiper{
+    width: 35%;
+    height: 300px;
+    border-radius: 25px;
+  }
+
+  .hero_button__text{
+    font-size: 14px;
+  }
+
+  .hero_button{
+    width: 150px;
+  }
+
+  .hero_button__img{
+    width: 30px;
+  }
+
+
+}
+
+@media(max-width:520px){
+  .servis_discount_block{
+    height: 530px;
+  }
+
+  .block_door__text{
+    margin-top: 14%;
+  }
+}
+@media(max-width:480px){
+  .servis_discount_block{
+    height: 490px;
+  }
+
+  .servis_discount_title__button{
+    width: 230px;
+  }
+}
+
+@media(max-width:495px){
+  .advantages_of_cooperation{
+    height: 1100px;
+  }
+  .advantages_of_cooperation__button{
+    margin-top: 15%;
+  }
+}
+
+@media(max-width:410px){
+  .advantages_of_cooperation{
+    height: 1200px;
+  }
+  .advantages_of_cooperation__button{
+    margin-top: 20%;
+  }
+}
+
+@media(max-width:371px){
+  .advantages_of_cooperation{
+    height: 1300px;
+  }
+  .advantages_of_cooperation__button{
+    margin-top: 25%;
+  }
+}
+
+@media(max-width:333px){
+  .advantages_of_cooperation{
+    height: 1400px;
+  }
+  .advantages_of_cooperation__button{
+    margin-top: 30%;
+  }
+}
+
+@media(max-width:469px){
+  .hero__swiper{
+    height: 340px;
+  }
+  
+}
+@media(max-width:440px){
+  .servis_discount_block{
+    height: 450px;
+  }
+  .creat_door__block{
+    height: 1500px;
+  }
+  .creat_your_door{
+    height: 1600px;
+  }
+}
+
+@media(max-width:400px){
+  .servis_discount_block{
+    height: 410px;
+  }
+}
+@media(max-width:360px){
+  .servis_discount_block{
+    height: 360px;
+  }
+  .creat_door__block{
+    height: 1600px;
+  }
+  .creat_your_door{
+    height: 1700px;
+  }
+}
+
+@media(max-width:320px){
+  .servis_discount_block{
+    height: 320px;
+  }
+}
+@media(max-width:720px){
+  .choice__accessories__block span {
+    left: -80%;
+  }
+
+  .choice__accessories__block label span::after {
+    width: 8px;
+    height: 8px;
+
+  }
+
+  .choice__accessories__block span {
+    height: 14px;
+    width: 14px;
+
+  }
+}
+
+@media(max-width:480px){
+  .hero_mark__title,.advantages_title,.catalog_doors_title,.creat_dor__title,.implemented_projects_title,.projects_text{
+    font-size: 18px;
+  }
+
+  .contact_us__mark{
+    width: 100%;
+  }
+
+  .gold_big,.hero_title,.door_characteristic_text,.door_button_text,.advantages_of_cooperation__title,.advantages_of_cooperation_block__number,.door_inner_shell__title,.door_color_title,.door_glass_title,.catalog_accessories_title,.servis_discount_title__text,.choice__text,.about_title,.abouy_number_title,.contact_us__title,.footer_button{
+    font-size:14px;
+  }
+
+  .mark_list,.hero_text,.info_door_text,.hero_button__text,.advantages_text,.advantages_of_cooperation_block__text,.advantages_of_cooperation__button_text,.door_inner_shell__title, .door_inner_shell__text, .door_inner_shell__characteristic, .door_inner_shell_cost__title, .door_inner_shell_characteristic__text, .door_color_title, .door_glass_title, .block_accessories__text, .servis_discount_title__button, .block_door__text, .choice__text, .about_text, .about_number_text, .projects_text, .our_contact_gps, .our_contact__mail_adres, .our_contact_phone, .our_contact__soc_net, .contact_us__mark,.servis_discount_title__text2,.creat_door_button_text,.about_text,.about_number_text,.about_button_text,.projects_text,.contact_us__input_top,.contact_us__input,.contact_us__approval,.footer_tex,.footer_tex .text_derection{
+    font-size:12px;
+  }
+
+  .door_characteristic_img{
+    width: 80px;
+  }
+
+  .hero_mark{
+    width: 150px;
+    height: 530px;
+    gap: 5%;
+  }
+
+  .hero_button__img{
+    width: 25px;
+  }
+  
+  .hero_button{
+    width: 125px;
+    height: 40px;
+  }
+
+  .hero__swiper{
+    height: 250px;
+  }
+
+  .door_button_marker{
+    width: 65%;
+  }
+
+  .door_button{
+    width: 300px;
+    height:42px;
+  }
+
+  .door__img{
+    width: 300px;
+    
+  }
+
+  .door_button_text{
+    width: 200px;
+  }
+
+  .advantages_of_cooperation__button{
+    width: 250px;
+    height: 50px;
+  }
+
+  .servis_discount_title__button{
+    width: 230px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .creat_door_button{
+    width: 200px;
+  }
+
+  .our_contact__soc_net{
+    width: 100px;
+  }
+
+  .contact_us__input{
+    height: 35px;
+  }
+
+  .contact_us__text {
+    width: 70%;
+  }
+  
+  .contact_us__approval{
+    text-align: center;
+  }
+  
+
+
+}
+
+@media(max-width:400px){
+  .hero{
+    gap: 10%;
+  }
+
+  .hero__swiper{
+    margin-left: 0;
+  }
+}
+@media(max-width:380px){
+
+  .hero__swiper{
+    width: 45%;
+  }
+
+  .hero{
+    gap: 1%;
+  }
+
+  .advantages_of_cooperation{
+    height: 1000px;
+  }
+
+  .block_door__background{
+    width: 70%;
+    height: 50%;
+    background-size: contain;
+  }
+
+  .block_door_img{
+    width: 50%;
+  }
+
+  .choice__color_accessories{
+    margin-top: 20%;
+  }
+
+  .creat_door__block{
+    height: 1650px;
+  }
+
+  .creat_your_door{
+    height: 1750px;
+  }
+
+  .about_flex{
+    height: 700px;
+  }
+
+  .about__background_color{
+    height: 750px;
+  }
+
+  .contact_us__mark{
+    width: 100%;
+  }
+
+
+}
+
+
 
 
 

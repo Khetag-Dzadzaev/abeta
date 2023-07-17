@@ -144,20 +144,30 @@ var swiper1 = new Swiper(document.getElementById('catalog'), {
 
 
   let swiper4 = new Swiper(document.getElementById('penswiper'), {
-
+    spaceBetween: 30,
     breakpoints: {
       // when window width is >= 320px
-      1001: {
+      650: {
         slidesPerView: 4,
         loop:true,
         initialSlide: 2,
+        centeredSlides: true,
       },
+
+      500: {
+        slidesPerView: 3,
+        loop:true,
+        initialSlide: 2,
+        centeredSlides: true,
+      },
+
       320: {
         slidesPerView: 2,
         loop:true,
         initialSlide: 2,
-        spaceBetween: 150,
+        centeredSlides: true,
       },
+      
     },
 
     navigation: {
