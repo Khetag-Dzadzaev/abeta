@@ -195,6 +195,7 @@
 /*hero*/
 
 
+
 .hero-block{
   background-image: url(/images/hero_bg.png);
   width: 100%;
@@ -204,7 +205,9 @@
   background-size: cover;
 }
 
-
+.hero_mark__list_2{
+  display: none;
+}
 
 .hero_mark{
   width: 175px;
@@ -236,6 +239,8 @@
   color: #2E2E2E;
   margin-top: 21%;
 }
+
+
 
 .mark_list{
   width: 121px;
