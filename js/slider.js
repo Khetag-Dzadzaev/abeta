@@ -51,13 +51,14 @@ var swiper1 = new Swiper(document.getElementById('catalog'), {
   });
 
   let swiper2 = new Swiper(document.getElementById('accessories'), {
-    spaceBetween: 30,
+    // spaceBetween: 30,
     initialSlide: 3,
     direction: 'horizontal',
     navigation: {
       nextEl: ".catalog_arrow__button_accessories ",
       prevEl: ".catalog_right_accessories",
     },
+    slidesPerView: 1,
 
     breakpoints:{
       1776:{

@@ -104,6 +104,11 @@
 
 @media(max-width:1000px){
 
+  .creat_door__button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
 
     .background_color__size .container_right{
@@ -156,7 +161,7 @@
     padding: 2% 2%;
     border-radius: 24px;
     background: #fff;
-    height: 1900px;
+    height: 1650px;
     box-shadow: 0px 4px 20px 0px #ECECEC;
 
 }
@@ -419,6 +424,12 @@
   }
 }
 
+@media(max-width:912px){
+  .creat_door__block{
+    height: 1900px;
+  }
+}
+
 @media(max-width:920px){
   .hero__swiper{
     width: 60%;
@@ -434,6 +445,10 @@
     background-repeat: no-repeat;
     background-position: top, center;
     background-size: cover;
+  }
+
+  .creat_door__block{
+    height: 1700px;
   }
 
   .door__img{
@@ -825,6 +840,30 @@
     border-radius: 25px;
   }
 
+  .burger{
+
+    width: 40px;
+    height: 40px;
+    z-index: 50;
+    background-color: #DDB96D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    opacity: 0.9;
+    border-radius: 50%;
+  }
+
+  .burger::before, .burger::after{
+    width: 25px;
+  }
+
+  .burger_line{
+    width: 25px;
+  }
+
   .hero_button__text{
     font-size: 14px;
   }
@@ -852,6 +891,10 @@
 @media(max-width:480px){
   .servis_discount_block{
     height: 490px;
+  }
+
+  .burger{
+    top: 20px;
   }
 
   .servis_discount_title__button{
