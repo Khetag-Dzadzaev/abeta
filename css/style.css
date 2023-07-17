@@ -195,6 +195,7 @@
 /*hero*/
 
 
+
 .hero-block{
   background-image: url(/images/hero_bg.png);
   width: 100%;
@@ -204,7 +205,9 @@
   background-size: cover;
 }
 
-
+.hero_mark__list_2{
+  display: none;
+}
 
 .hero_mark{
   width: 175px;
@@ -237,6 +240,8 @@
   margin-top: 21%;
 }
 
+
+
 .mark_list{
   width: 121px;
   font-family: Montserrat;
@@ -253,7 +258,7 @@
 
 
 .hero__swiper{
-  width: 50%;
+  width: 800px;
   margin-top: 20%;
   margin-left: 7%;
 
