@@ -138,8 +138,8 @@ var swiper1 = new Swiper(document.getElementById('catalog'), {
     freeMode: true,
     spaceBetween: 50,
     navigation: {
-      nextEl: ".arrow_right ",
-      prevEl: ".arrow",
+      nextEl: ".hero__arrow-right ",
+      prevEl: ".hero__arrow",
     },
   });
 

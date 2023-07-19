@@ -16,6 +16,7 @@
 .container{
     max-width: 1300px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .container-left{
@@ -54,41 +55,40 @@
 
 /*header*/
 
-.header-block{
+.header{
   position: absolute;
   width: 100%;
+  top: 5%;
 }
 
-
-.header_menu__list{
+.menu{
   display: flex;
-  margin-top: 5%;
+  width: 100%;
+  justify-content: flex-end;
 }
 
-.header_menu{
-  width: 100%;
+.menu__list{
   display: flex;
   justify-content: flex-end;
   transition: all 3s ease 1s;
 }
 
-.burger_elm{
+.menu{
   display: flex;
   width: 100%;
   align-items: center;
   height: 64px;
   display: flex;
   justify-content: flex-end;
-  margin-top: 1%;
 }
 
-.header_menu__list{
+.menu__list{
   display: flex;
-  gap: 3%;
+  gap: 18px;
   width: 34%;
 }
 
-.menu_list__button{
+.menu__link{
   text-decoration: none;
   font-family: Montserrat;
   font-weight: 400;
@@ -98,30 +98,17 @@
   color: #2E2E2E;
 }
 
-.header_menu__phone{
-  margin-top: 5%;
+.header__phone{
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 30px;
-  width: 26%;
-  gap: 5%;
-}
-
-.line{
+  width: auto;
+  height: 40px;
   border-bottom: 2px dashed  #78F362;
-  width: 60%;
+  margin-left: 63px;
+  margin-right: 32px;
 }
 
-.text_img{
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-
-.menu_phone{
+.header__phone-link{
   text-decoration: none;
   font-family: Jost;
   font-weight: 800;
@@ -129,23 +116,11 @@
   text-align: center;
   line-height: 28.9px;
   color: #2E2E2E;
+  width: 180px;
 }
 
-.header_menu__feedback{
-  margin-top: 5%;
-  color: #fff;
-  list-style-type: inherit;
-  background: linear-gradient(to top, #CDA44E, #EBCB88);
-  border-radius: 48px;
-  border-bottom: #BB9441 solid 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 21%;
-  height: 64px;
-}
-
-.feedback{
+.header__feedback-link{
+  position: relative;
   font-family: Jost;
   font-weight: 800;
   font-size: 18px;
@@ -153,13 +128,33 @@
   line-height: 24px;
   color: #fff;
   text-decoration: none;
+  list-style-type: inherit;
+  background: linear-gradient(to top, #CDA44E, #EBCB88);
+  border-radius: 48px;
+  border-bottom: #BB9441 solid 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 64px;
+  padding: 4px 56px;
+}
+
+.header__feedback-link::before{
+  position: absolute;
+  left: 15%;
+  top: 32.5%;
+  content: url(/images/Ellipse\ 7.svg);
+  position: absolute;
+  width: 4px;
+  height: 4px;
 }
 
 .burger{
   display: none;
 }
 
-.burger_line{
+.burger__line{
   width: 35px;
   height: 2.5px;
   background-color: #493F39;
@@ -194,24 +189,24 @@
 
 /*hero*/
 
-
-
 .hero-block{
+  display: flex;
+}
+
+.hero_background-img{
   background-image: url(/images/hero_bg.png);
-  width: 100%;
+  width: auto;
   height: 800px;
   background-repeat: no-repeat;
-  background-position: top, center;
+  background-position: bottom, center;
   background-size: cover;
 }
 
-.hero_mark__list_2{
+.hero__mark-list_phone{
   display: none;
 }
 
-.hero_mark{
-  width: 175px;
-  height: 630px;
+.hero__mark{
   background-image: url(/images/advantages.svg
   );
   background-repeat: no-repeat;
@@ -219,31 +214,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10%;
+  gap: 116px;
+  width: 14%;
+  padding-bottom: 4%;
 }
 
-.hero_mark__list{
+.hero__mark-list{
   width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 100%;
 }
 
-.hero_mark__title{
+.hero__mark-title{
   font-family: Jost;
   font-weight: 700;
   font-size: 24px;
   text-align: center;
   line-height: 57.8px;
   color: #2E2E2E;
-  margin-top: 21%;
+  margin-top: 25%;
 }
 
 
 
-.mark_list{
-  width: 121px;
+.hero__mark-item{
   font-family: Montserrat;
   font-weight: 600;
   font-size: 16px;
@@ -252,19 +247,17 @@
   color: #2E2E2E;
 }
 
-.hero{
-  display: flex;
-}
+
 
 
 .hero__swiper{
-  width: 800px;
+  width: 700px;
   margin-top: 20%;
   margin-left: 7%;
 
 }
 
-.hero_title{
+.hero__title{
   font-family: Jost;
   font-weight: 800;
   font-size: 56px;
@@ -272,7 +265,7 @@
   color: #2E2E2E;
 }
 
-.hero_text{
+.hero__text{
   font-family: Montserrat;
   font-weight: 400;
   font-size: 16px;
@@ -282,7 +275,7 @@
   margin-bottom: 24px;
 }
 
-.hero_button{
+.hero-button{
   width: 335px;
   height: 72px;
   display: flex;
@@ -295,7 +288,7 @@
   padding-right: 5%;
 }
 
-.hero_button__text{
+.hero-button__link{
   font-family: Jost;
   font-weight: 800;
   font-size: 20px;
@@ -305,13 +298,13 @@
   text-decoration: none;
 }
 
-.hero_arrow{
+.hero__swipper-arrow{
   display: flex;
   margin-top: 2%;
   gap: 1%
 }
 
-.arrow{
+.hero__arrow {
   width: 57px;
   height: 57px;
   border: none;
@@ -322,7 +315,7 @@
   align-items: center;
 }
 
-.arrow_right{
+.hero__arrow-right {
   transform: rotateY(180deg);
   width: 57px;
   height: 57px;
@@ -333,11 +326,6 @@
   justify-content: center;
   align-items: center;
 }
-
-.hero-swiper{
-  display: flex;
-}
-
 
 /*advantages*/
 

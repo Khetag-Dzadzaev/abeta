@@ -16,131 +16,126 @@
     <link rel="stylesheet" href="css/adaptive.css">
 </head>
 <body class="body">
-    <header class="header
+    <header class="header-block
     " id="header">
-    <div class="container">
-        <div class="header__menu">
-          <div class="burger">
-            <div class="burger__line"></div>
+    <section class="container">
+        <div class="header_menu">
+          
+          <div class="burger ">
+            <div class="burger_line"></div>
           </div>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu_item"><a href="#advantages" class="menu__link">О дверях</a></li>
-              <li class="menu_item"><a href="#catalog" class="menu__link">Продукция</a></li>
-              <li class="menu_item"><a href="#servis" class="menu__link">Сервис</a></li>
-              <li class="menu_item"><a href="#about" class="menu__link">О нас</a></li>
-              <li class="menu_item"><a href="#our_contact" class="menu__link">Контакты</a></li>
+          <nav class="burger_elm">
+            <ul class="header_menu__list">
+              <li class="menu_list"><a href="#advantages" class="menu_list__button">О дверях</a></li>
+              <li class="menu_list"><a href="#catalog" class="menu_list__button">Продукция</a></li>
+              <li class="menu_list"><a href="#servis" class="menu_list__button">Сервис</a></li>
+              <li class="menu_list"><a href="#about" class="menu_list__button">О нас</a></li>
+              <li class="menu_list"><a href="#our_contact" class="menu_list__button">Контакты</a></li>
           </ul>
 
-          <div class="header__phone">
-              <img src="/images/whots.svg" alt="whotsaap" class="header__phone-img">
-              <a href="#" class="header__phone-link">7(495) 088-18-08</a>
+          <div class="header_menu__phone">
+            <div class="text_img">
+              <img src="/images/whots.svg" alt="whotsaap" class="menu_phone__img">
+              <a href="#" class="menu_phone">7(495) 088-18-08</a>
+            </div>
+            <div class="line"></div>
           </div>
 
-          <a href="#" class="header__feedback-link">Обратная связь</a>
+          <ul class="header_menu__feedback">
+              <li class="menu_feedback">
+                  <a href="#" class="feedback">Обратная связь</a>
+              </li>
+          </ul>
           </nav>
         </div>
-    </div>
+    </section>
     </header>
     <main class="main ">
-       <section class="hero" >
-        <div class="container_big">
-          <div class="hero_background-img">
-            <div class="container">
-              <div class="hero-block" >
-                <div class="hero__mark">
-                  <h2 class="hero__mark-title"><span class="gold">Двери</span> тут</h2>
-                  <ul class="hero__mark-list">
-                    <li class="hero__mark-item">
+       <section class="hero-block" >
+          <div class="container">
+            <div class="hero " >
+              <div class="hero_mark ">
+                <h2 class="hero_mark__title"><span class="gold">Двери</span> тут</h2>
+                <ul class="hero_mark__list">
+                  <li class="mark_list">
+                      <span class="gold_big">7 лет</span><br>Гарантии на дверь
+                  </li>
+                  <li class="mark_list">
+                      <span class="gold_big">100</span><br>моделей дверей
+                          и цветов
+                  </li>
+                  <li class="mark_list">
+                      <span class="gold_big">от 7</span><br>дней изготовление дверей
+                  </li>
+                </ul>
+              </div>
+              <div class="hero_swiper_list_flex">
+                <div class="hero__swiper">
+                  <div class="swiper swiper_hero" id="heroswiper">
+                    <div class="hero-swiper swiper-wrapper" >
+                        <div class="hero_info swiper-slide">
+                          <h1 class="hero_title"><span class="gold">Изготовим и установим</span><br>межкомнатные двери</h1>
+                          <p class="hero_text">Изготавливаем только по индивидуальным размерам</p>
+                          <div class="hero_button">
+                              <img src="images/roulette.png" alt="roulette" class="hero_button__img">
+                              <a href="" class="hero_button__text">Заказать замер</a>
+                          </div>
+                        </div>
+                        <div class="hero_info swiper-slide ">
+                          <h1 class="hero_title"><span class="gold">Изготовим и установим</span><br>межкомнатные двери</h1>
+                          <p class="hero_text">Изготавливаем только по индивидуальным размерам</p>
+                          <div class="hero_button">
+                              <img src="images/roulette.png" alt="roulette" class="hero_button__img">
+                              <a href="" class="hero_button__text">Заказать замер</a>
+                          </div>
+                        </div>
+                        <div class="hero_info swiper-slide">
+                          <h1 class="hero_title"><span class="gold">Изготовим и установим</span><br>межкомнатные двери</h1>
+                          <p class="hero_text">Изготавливаем только по индивидуальным размерам</p>
+                          <div class="hero_button">
+                              <img src="images/roulette.png" alt="roulette" class="hero_button__img">
+                              <a href="" class="hero_button__text">Заказать замер</a>
+                          </div>
+                        </div>
+                        <div class="hero_info swiper-slide ">
+                          <h1 class="hero_title"><span class="gold">Изготовим и установим</span><br>межкомнатные двери</h1>
+                          <p class="hero_text">Изготавливаем только по индивидуальным размерам</p>
+                          <div class="hero_button">
+                              <img src="images/roulette.png" alt="roulette" class="hero_button__img">
+                              <a href="" class="hero_button__text">Заказать замер</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="hero_arrow">
+                      <button class="arrow arrow_hover"><img src="/images/arrow.svg" alt="arrow" class="hero_arrow__img"></button>
+                      <button class="arrow_right arrow_hover"><img src="/images/arrow.svg" alt="arrow" class="hero_arrow__img"></button>
+                    </div>
+                   
+                </div>
+                <div class="hero_mark__list_2">
+                  <ul class="hero_mark__list">
+                    <li class="mark_list">
                         <span class="gold_big">7 лет</span><br>Гарантии на дверь
                     </li>
-                    <li class="hero__mark-item">
+                    <li class="mark_list">
                         <span class="gold_big">100</span><br>моделей дверей
                             и цветов
                     </li>
-                    <li class="hero__mark-item">
+                    <li class="mark_list">
                         <span class="gold_big">от 7</span><br>дней изготовление дверей
                     </li>
                   </ul>
                 </div>
-                <div class="hero__swiper">
-                    <div class="swiper" id="heroswiper">
-                      <div class="swiper-wrapper" >
-                          <div class="swiper-slide">
-                            <div class="header__swiper-block">
-                              <h1 class="hero__title"><span class="gold">Изготовим и установим</span><br>межкомнатные двери</h1>
-                              <p class="hero__text">Изготавливаем только по индивидуальным размерам</p>
-                              <div class="hero-button">
-                                <img src="images/roulette.png" alt="roulette" class="hero-button__img">
-                                <a href="" class="hero-button__link">Заказать замер</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="header__swiper-block">
-                              <h1 class="hero__title"><span class="gold">Изготовим и установим</span><br>межкомнатные двери</h1>
-                              <p class="hero__text">Изготавливаем только по индивидуальным размерам</p>
-                              <div class="hero-button">
-                                <img src="images/roulette.png" alt="roulette" class="hero-button__img">
-                                <a href="" class="hero-button__link">Заказать замер</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="header__swiper-block">
-                              <h1 class="hero__title"><span class="gold">Изготовим и установим</span><br>межкомнатные двери</h1>
-                              <p class="hero__text">Изготавливаем только по индивидуальным размерам</p>
-                              <div class="hero-button">
-                                <img src="images/roulette.png" alt="roulette" class="hero-button__img">
-                                <a href="" class="hero-button__link">Заказать замер</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="header__swiper-block">
-                              <h1 class="hero__title"><span class="gold">Изготовим и установим</span><br>межкомнатные двери</h1>
-                              <p class="hero__text">Изготавливаем только по индивидуальным размерам</p>
-                              <div class="hero-button">
-                                <img src="images/roulette.png" alt="roulette" class="hero-button__img">
-                                <a href="" class="hero-button__link">Заказать замер</a>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                      <div class="hero__swipper-arrow">
-                        <button class="hero__arrow arrow_hover"><img src="/images/arrow.svg" alt="arrow" class="hero_arrow__img"></button>
-                        <button class="hero__arrow-right arrow_hover"><img src="/images/arrow.svg" alt="arrow" class="hero_arrow__img"></button>
-                      </div>
-                    
-                  </div>
-                  <div class="hero__mark-list_phone">
-                    <ul class="hero__mark-list">
-                      <li class="hero__mark-item">
-                          <span class="gold_big">7 лет</span><br>Гарантии на дверь
-                      </li>
-                      <li class="hero__mark-item">
-                          <span class="gold_big">100</span><br>моделей дверей
-                              и цветов
-                      </li>
-                      <li class="hero__mark-item">
-                          <span class="gold_big">от 7</span><br>дней изготовление дверей
-                      </li>
-                    </ul>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-        </div>
-          
        </section>
-       <section class="advantages" id="advantages">
-        <div class="conrainer">
-          <div class="advantages_title__info ">
+       <section class="advantages container " id="advantages">
+            <div class="advantages_title__info ">
                 <h2 class="advantages_title"><span class="gold">Преимущества</span> наших дверей</h2>
                 <p class="advantages_text">Наша компания предлагает ряд преимуществ межкомнатной двери, которые делают ее отличным выбором для вашего интерьера.</p>
-          </div>
-          <div class="advantages_info__door ">
+            </div>
+            <div class="advantages_info__door ">
                 <div class="info_door info_door__right">
                     <div class="info_door__characteristic">
                         <div class="door_characteristic__img_and_text">
@@ -178,10 +173,9 @@
                         <p class="info_door_text">Надежная защита помещения. Прост в использовании. Высокое качество и долговечность.</p>
                     </div>
                 </div>
-          </div>
-        </div>
-      </section>
-<!--        <section class="advantages_of_cooperation  " id="advantages_of_cooperation">
+            </div>
+        </section>
+        <section class="advantages_of_cooperation  " id="advantages_of_cooperation">
             <div class="advantages_of_cooperation_backgroung_color">
               <div class="container">
                 <div class="advantages_of_cooperation__flex">
@@ -951,10 +945,11 @@
         <p class="footer_tex text_derection">Разработка сайта</p>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=ваш API-ключ&?apikey=ваш API-ключ&load=package.standard&lang=ru-RU" ></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/burger.js"></script>
     <script src="./js/map.js"></script>
 </body>
+
