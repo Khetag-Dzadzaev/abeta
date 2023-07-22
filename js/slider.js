@@ -24,155 +24,146 @@ const swiper = new Swiper('.swiper', {
     // },
 }); */
 
-
-var swiper1 = new Swiper(document.getElementById('catalog'), {
-    spaceBetween: 30,
-    initialSlide: 1,
-    navigation: {
-      nextEl: ".catalog_right",
-      prevEl: ".catalog_arrow__button  ",
+var swiper1 = new Swiper(document.getElementById("catalog-door"), {
+  spaceBetween: 30,
+  initialSlide: 1,
+  navigation: {
+    nextEl: ".catalog__arrow_right",
+    prevEl: ".catalog__arrow_left  ",
+  },
+  breakpoints: {
+    1240: {
+      slidesPerView: 3,
     },
-    breakpoints:{
-      1240:{
-        slidesPerView: 3,
-        centeredSlides: true,
-      },
-      768:{
-        slidesPerView: 2,
-        centeredSlides: true,initialSlide: -1,
-      },
-
-
-      320:{
-        slidesPerView: 1,
-
-      }
-    }
-  });
-
-  let swiper2 = new Swiper(document.getElementById('accessories'), {
-    // spaceBetween: 30,
-    initialSlide: 3,
-    direction: 'horizontal',
-    navigation: {
-      nextEl: ".catalog_arrow__button_accessories ",
-      prevEl: ".catalog_right_accessories",
+    768: {
+      slidesPerView: 2,
+      centeredSlides: true,
     },
-    slidesPerView: 1,
-
-    breakpoints:{
-      1776:{
-        slidesPerView: 6,
-      },
-      1450:{
-        slidesPerView: 5,
-        centeredSlides: true,
-      },
-
-      1250:{
-        slidesPerView: 4,
-      },
-
-      800:{
-        slidesPerView: 3,
-        centeredSlides: true,
-      },
-
-      500:{
-        slidesPerView: 2,
-      },
-
-      320:{
-        slidesPerView: 1,
-        centeredSlides: true,
-      }
-    }
-  });
-
-  let swiper3 = new Swiper(document.getElementById('implemented_project'), {
-    
-    spaceBetween: 30,
-    initialSlide: 3,
-
-    navigation: {
-      nextEl: ".projects_arrow_right ",
-      prevEl: ".projects_arrow",
+    320: {
+      slidesPerView: 1,
     },
-    breakpoints: {
-      // when window width is >= 320px
-      1776: {
-        slidesPerView: 7,
-        centeredSlides: true,
-      },
-      // when window width is >= 480px
-      1516: {
-        slidesPerView: 6,
-        
-      },
-      // when window width is >= 640px
-      1259: {
-        slidesPerView: 5,
-        centeredSlides: true,
-      },
+  },
+});
 
-      891: {
-        slidesPerView: 4,
-      },
+let swiper2 = new Swiper(document.getElementById("accessories"), {
+  spaceBetween: 30,
+  initialSlide: 3,
+  direction: "horizontal",
+  navigation: {
+    nextEl: ".catalog__accessories_right",
+    prevEl: ".catalog__accessories_left",
+  },
+  slidesPerView: 1,
 
-      583: {
-        slidesPerView: 3,
-        centeredSlides: true,
-      },
-
-      320: {
-        slidesPerView: 2,
-      },
-    }
-  });
-
-  let swiper = new Swiper(document.getElementById('heroswiper'), {
-    direction: 'horizontal',
-    loop: true,
-    speed: 500,
-    slidesPerView: 1,
-    freeMode: true,
-    spaceBetween: 50,
-    navigation: {
-      nextEl: ".hero__arrow-right ",
-      prevEl: ".hero__arrow",
+  breakpoints: {
+    1776: {
+      slidesPerView: 6,
     },
-  });
-
-
-  let swiper4 = new Swiper(document.getElementById('penswiper'), {
-    spaceBetween: 30,
-    breakpoints: {
-      // when window width is >= 320px
-      650: {
-        slidesPerView: 4,
-        loop:true,
-        initialSlide: 2,
-        centeredSlides: true,
-      },
-
-      500: {
-        slidesPerView: 3,
-        loop:true,
-        initialSlide: 2,
-        centeredSlides: true,
-      },
-
-      320: {
-        slidesPerView: 2,
-        loop:true,
-        initialSlide: 2,
-        centeredSlides: true,
-      },
-      
+    1450: {
+      slidesPerView: 5,
+      centeredSlides: true,
     },
 
-    navigation: {
-      nextEl: ".choice__accessories__button_right",
-      prevEl: ".choice__accessories__button",
+    1250: {
+      slidesPerView: 4,
     },
-  });
+
+    800: {
+      slidesPerView: 3,
+      centeredSlides: true,
+    },
+
+    500: {
+      slidesPerView: 2,
+    },
+
+    320: {
+      slidesPerView: 1,
+      centeredSlides: true,
+    },
+  },
+});
+
+let swiper3 = new Swiper(document.getElementById("implemented_project"), {
+  spaceBetween: 30,
+  initialSlide: 2,
+
+  navigation: {
+    nextEl: ".projects_arrow_right ",
+    prevEl: ".projects_arrow",
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1776: {
+      slidesPerView: 7,
+      centeredSlides: true,
+    },
+    // when window width is >= 480px
+    1516: {
+      slidesPerView: 6,
+    },
+    // when window width is >= 640px
+    1259: {
+      slidesPerView: 5,
+      centeredSlides: true,
+    },
+
+    891: {
+      slidesPerView: 4,
+    },
+
+    583: {
+      slidesPerView: 3,
+      centeredSlides: true,
+    },
+
+    320: {
+      slidesPerView: 2,
+    },
+  },
+});
+
+let swiper = new Swiper(document.getElementById("heroswiper"), {
+  direction: "horizontal",
+  loop: true,
+  speed: 500,
+  slidesPerView: 1,
+  freeMode: true,
+  spaceBetween: 50,
+  navigation: {
+    nextEl: ".hero__arrow-right ",
+    prevEl: ".hero__arrow",
+  },
+});
+
+let swiper4 = new Swiper(document.getElementById("penswiper"), {
+  spaceBetween: 30,
+  breakpoints: {
+    // when window width is >= 320px
+    650: {
+      slidesPerView: 4,
+      loop: true,
+      initialSlide: 2,
+      centeredSlides: true,
+    },
+
+    500: {
+      slidesPerView: 3,
+      loop: true,
+      initialSlide: 2,
+      centeredSlides: true,
+    },
+
+    320: {
+      slidesPerView: 2,
+      loop: true,
+      initialSlide: 2,
+      centeredSlides: true,
+    },
+  },
+
+  navigation: {
+    nextEl: ".choice__accessories__button_right",
+    prevEl: ".choice__accessories__button",
+  },
+});
