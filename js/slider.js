@@ -86,11 +86,11 @@ let swiper2 = new Swiper(document.getElementById("accessories"), {
 
 let swiper3 = new Swiper(document.getElementById("implemented_project"), {
   spaceBetween: 30,
-  initialSlide: 2,
+  initialSlide: 4,
 
   navigation: {
-    nextEl: ".projects_arrow_right ",
-    prevEl: ".projects_arrow",
+    nextEl: ".implemented__arrow-right",
+    prevEl: ".implemented__arrow-left ",
   },
   breakpoints: {
     // when window width is >= 320px
@@ -163,7 +163,7 @@ let swiper4 = new Swiper(document.getElementById("penswiper"), {
   },
 
   navigation: {
-    nextEl: ".choice__accessories__button_right",
-    prevEl: ".choice__accessories__button",
+    nextEl: ".creat__choice-accessories-button_right",
+    prevEl: ".creat__choice-accessories-button_left ",
   },
 });

@@ -1001,13 +1001,13 @@
   display: inline-block;
 }
 
-.choice_door__blocks {
+.creat__choice-doors{
   display: flex;
   gap: 60px;
   margin-top: 20px;
 }
 
-.choice__door__block {
+.creat__choice-door{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1015,7 +1015,7 @@
   gap: 5%;
 }
 
-.choice__door_text {
+.creat__radio-text{
   color: var(--3-d-3-b-3-b, #505050);
   font-size: 14px;
   font-family: Montserrat;
@@ -1025,7 +1025,7 @@
   width: 100%;
 }
 
-.choice__door_lable {
+.creat__radio {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1034,9 +1034,9 @@
   width: 100%;
 }
 
-.choice__dor_color {
+.creat__choice-color{
   display: flex;
-  gap: 10%;
+  gap: 20px;
 }
 
 .creat__door-accessories{
@@ -1045,9 +1045,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.choice__accessories_text {
+.creat__choice-accessories-radio_text{
   color: var(--3-d-3-b-3-b, #505050);
   font-family: Montserrat;
   font-size: 14px;
@@ -1056,12 +1057,12 @@
   line-height: 20px;
 }
 
-.choice__accessories__button {
+.creat__choice-accessories-button_left {
   border-radius: 100%;
   border: none;
   background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background: none;
   display: flex;
   justify-content: center;
@@ -1072,12 +1073,12 @@
   top: 45%;
 }
 
-.choice__accessories__button_right {
+.creat__choice-accessories-button_right{
   border-radius: 100%;
   border: none;
   background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background: none;
   transform: rotateY(180deg);
   display: flex;
@@ -1093,7 +1094,7 @@
   width: 100%;
 }
 
-.choice__accessories__arrow_hover:hover {
+.creat__choice-accessories-arrow_hover:hover {
   background-color: #fff;
   width: 60px;
   height: 60px;
@@ -1101,7 +1102,7 @@
   opacity: 50%;
 }
 
-.choice__accessories_lable {
+.creat__choice-accessories-radio {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1110,54 +1111,30 @@
   width: 100%;
 }
 
-.choice__accessories__blocks {
+.creat__choice-accessories-blocks {
   width: 20px;
 }
 
-.choice__accessories__block {
-  height: 125px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 25%;
-}
-
-.choice__accessories_pen {
+.creat__choice-accessories{
   position: relative;
   display: flex;
-  width: 95%;
+  width: 80%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 190px;
-  padding-left: 2.5%;
 }
 
-.choice__accessories__block {
-  height: 190px;
+.creat__choice-accessories-pen{
+  height: 165px;
+}
+
+.creat__door-accessories > .button{
+  margin-top: 32px;
 }
 
 /*implemented_projects*/
 
-.implemented_projects {
-  margin-bottom: 5%;
-  position: relative;
-  width: 100%;
-}
-
-.implemented_projects_title {
-  color: #220c0c;
-  text-align: center;
-  font-size: 40px;
-  font-family: Jost;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  padding-right: 2.1%;
-}
-
-.projects_block {
+.implemented__projects-block{
   width: 100%;
   height: 398px;
   border-radius: 24px;
@@ -1172,7 +1149,7 @@
   width: 100%;
 }
 
-.projects_block1 {
+.implemented__projects-block1 {
   width: 100%;
   height: 398px;
   border-radius: 24px;
@@ -1191,7 +1168,7 @@
   width: 100%;
 }
 
-.projects_text {
+.implemented__text {
   color: var(--3-d-3-b-3-b, #505050);
   text-align: center;
   font-size: 16px;
@@ -1201,14 +1178,14 @@
   line-height: 26px;
 }
 
-.project_button_block {
+.implemented__projects-button-block {
   height: 80%;
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
-.project_button {
+.implemented__projects-button {
   background-image: url(/images/icon-plus.svg);
   width: 48px;
   height: 15%;
@@ -1217,7 +1194,7 @@
   background-repeat: no-repeat;
 }
 
-.projects_arrow {
+.implemented__arrow-left {
   position: absolute;
   top: 50%;
   left: 12.5%;
@@ -1230,7 +1207,7 @@
   z-index: 2;
 }
 
-.projects_arrow_right {
+.implemented__arrow-right{
   position: absolute;
   top: 50%;
   right: 14%;
@@ -1244,7 +1221,7 @@
   z-index: 2;
 }
 
-.projects_arrow_hover:hover {
+.implemented__arrow_hover :hover {
   background-color: #fff;
   width: 55px;
   height: 55px;
@@ -1258,92 +1235,51 @@
   height: auto;
 }
 
+.implemented__projects > .container_big > .title{
+  margin-bottom: 40px;
+}
+
 /*about*/
 
 .about {
   background-color: #000;
-  margin-bottom: 5%;
   width: 100%;
 }
 
-.about_background__img {
-  background-image: url(/images/close-up-of-metal-doorknob-on-blurred-background-of-home-interior\\(
-      1\
-    )\1png);
+.about__background-img {
+  background-image: url(/images/close-up-of-metal-doorknob-on-blurred-background-of-home-interior.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 658px;
 }
 
 .about__number {
   width: 50%;
 }
 
-.about__background_color {
+.about__background-color{
   width: 100%;
-  height: 658px;
   background-color: #311616;
   opacity: 0.89;
 }
 
-.background_color__size {
-  width: 100%;
-}
-
-.about_flex {
+.about__flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.about_info {
+.about__info{
   width: 50%;
   display: flex;
   flex-direction: column;
 }
 
-.about_title {
-  color: var(--ffffff, #fff);
-  font-size: 40px;
-  font-family: Jost;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin-bottom: 5%;
+.about__info>.container-left>.button{
+  width: 250px;
 }
 
-.about_text {
-  color: var(--ffffff, #fff);
-  font-size: 16px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  margin-bottom: 5%;
-}
-
-.about_button_marker {
-  color: var(--ffffff, #fff);
-  font-size: 18px;
-  font-family: Jost;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 24px;
-  list-style-type: disc;
-}
-
-.about_button {
-  width: 300px;
-  height: 64px;
-  border-radius: 48px;
-  background: var(--linear, linear-gradient(180deg, #ebcb88 0%, #cda44e 100%));
-  box-shadow: 0px 3px 0px 0px #bb9441;
-  border: none;
-  padding: 20px 56px;
-}
-
-.abouy_number_title {
+.about__number-title {
   color: var(--ccb-178, #ddb96d);
   font-size: 40px;
   font-family: Jost;
@@ -1356,8 +1292,11 @@
   height: 100%;
 }
 
-.about_info > .container-left {
+.about__info > .container-left {
   margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .about_number_text {
@@ -1376,49 +1315,46 @@
   padding-top: 5%;
 }
 
-.about_number {
+.about__number-blocks{
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 85%;
 }
 
-.about_block_width {
+.about__block-width {
   width: 30%;
+  padding-bottom: 48px;
 }
 
-.about_number_blok {
+.about__number-block {
   display: flex;
   flex-direction: column;
-  gap: 50%;
+  gap: 10px;
 }
 
 /*our contact*/
 
-.our_contact__phone {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 30px;
-  width: 205px;
-  gap: 5%;
-  margin-right: 5%;
+.our-contact>.title{
+  margin-bottom: 40px;
 }
 
-.our_contac_line {
+.our-contact__phone{
+  display: flex;
+  align-items: center;
   border-bottom: 2px dashed #78f362;
-  width: 205px;
 }
 
-.our_contact__info_flex {
+.our-contact__info-flex{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  margin-left: 0.5%;
 }
 
-.our_contact_phone {
+.our-contact__phone-text {
   text-decoration: none;
   font-family: Jost;
   font-weight: 800;
@@ -1428,18 +1364,7 @@
   color: #2e2e2e;
 }
 
-.our_contact__title {
-  color: #311616;
-  text-align: center;
-  font-size: 40px;
-  font-family: Jost;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-}
-
-.our_contact_gps {
+.our-contact__text{
   color: var(--2-e-2-e-2-e, #493f39);
   text-align: right;
   font-size: 20px;
@@ -1450,13 +1375,9 @@
   text-decoration: none;
 }
 
-.our_contact__mail_adres {
-  color: var(--2-e-2-e-2-e, #493f39);
-  font-size: 20px;
-  font-family: Jost;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+
+.our_contact__mail>.our-contact__text{
+  
   text-decoration-line: underline;
 }
 
@@ -1473,15 +1394,18 @@
   margin-right: 7%;
 }
 
-.our_contact__gps {
+.our-contact__info-block  {
   display: flex;
   align-items: center;
   height: 20%;
   gap: 1%;
-  width: 320px;
 }
 
-.our_contact__soc_net {
+.our-contact__info-block_width{
+  width: 305px;
+}
+
+.our-contact__soc-net {
   border-radius: 32px;
   background: var(--linear, linear-gradient(180deg, #ebcb88 0%, #cda44e 100%));
   display: inline-flex;
@@ -1495,15 +1419,15 @@
   font-weight: 800;
   line-height: 24px;
   text-decoration: none;
-  margin-right: 1%;
 }
 
-.our_contact__block {
-  margin-top: 2%;
+.our-contact__soc-net:hover {
+  border-bottom: #e0b14d solid 3px;
+  background: linear-gradient(to top, #f2c35d, #ebcb88);
 }
 
 .map {
-  width: 50%;
+  width: 52.5%;
   height: 693px;
   border: 0;
 }
@@ -1534,18 +1458,18 @@
   height: 66px;
 }
 
-.our_contact__block {
+.our-contact__block{
   display: flex;
 }
 
-.contact_us {
+.our-contact__form{
   padding-left: 6%;
   background-color: #311616;
   width: 50%;
   height: 693px;
 }
 
-.contact_us__title {
+.our-contact__title {
   color: var(--ffffff, #fff);
   font-family: Jost;
   font-size: 24px;
@@ -1554,7 +1478,7 @@
   line-height: normal;
 }
 
-.contact_us__input_top {
+.our-contact__form-text {
   color: var(--ffffff, #fff);
   font-family: Montserrat;
   font-size: 16px;
@@ -1563,7 +1487,7 @@
   line-height: 22px;
 }
 
-.contact_us__input {
+.our-contact__input {
   width: 400px;
   height: 64px;
   padding: 1% 5%;
@@ -1578,32 +1502,11 @@
   line-height: 22px;
 }
 
-.contact_us__mark {
-  color: var(--ffffff, #fff);
-  font-family: Jost;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 24px;
-  list-style-type: disc;
-  width: 50px;
-  padding-left: 25%;
-}
-
-.contact_us__text {
-  width: 350%;
-}
-
-.contact_us__button {
-  border-radius: 48px;
-  background: var(--linear, linear-gradient(180deg, #ebcb88 0%, #cda44e 100%));
-  box-shadow: 0px 3px 0px 0px #bb9441;
-  border: none;
+.our-contact__form-flex > .button {
   width: 300px;
-  padding: 20px 0;
 }
 
-.contact_us__approval {
+.our-contact__approval {
   color: var(--ffffff, #fff);
   font-family: Montserrat;
   font-size: 14px;
@@ -1613,7 +1516,7 @@
   text-decoration-line: underline;
 }
 
-.form_flex {
+.our-contact__form-flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1628,14 +1531,14 @@
   background-color: #fff;
 }
 
-.footer_flex {
+.footer__flex {
   height: 140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer_tex {
+.footer__text {
   color: var(--3-d-3-b-3-b, #505050);
   text-align: center;
   font-size: 14px;
@@ -1649,7 +1552,7 @@
   border-bottom: solid 1px var(--3-d-3-b-3-b, #505050);
 }
 
-.footer_button {
+.footer__button {
   color: var(--ccb-178, #ddb96d);
   text-align: center;
   font-size: 14px;
@@ -1668,20 +1571,20 @@
 
 /*cactom radio*/
 
-.choice__door__block input {
+.creat__choice-doors input {
   position: absolute;
   opacity: 0;
   сursor: pointer;
 }
 
-.choice__door__block label {
+.creat__choice-doors label {
   position: relative;
   cursor: pointer;
   font-size: 17px;
   user-select: none;
 }
 
-.choice__door__block span {
+.creat__choice-doors span {
   position: absolute;
   bottom: -25%;
   left: 40%;
@@ -1692,44 +1595,44 @@
   border: 2px solid #ddb96d;
 }
 
-.choice__door__block label input:checked ~ span {
+.creat__choice-doors label input:checked ~ span {
 }
 
-.choice__door__block span:after {
+.creat__choice-doors span:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.choice__door__block label input:checked ~ span:after {
+.creat__choice-doors label input:checked ~ span:after {
   display: block;
 }
 
-.choice__door__block label span:after {
-  top: 23%;
-  left: 23%;
+.creat__choice-doors label span:after {
+  top: 24%;
+  left: 24%;
   width: 14px;
   height: 14px;
   border-radius: 50%;
   background-image: url(/images/radio_chek.svg);
 }
 
-.choice__dor_color input {
+.creat__choice-color input {
   position: absolute;
   opacity: 0;
   сursor: pointer;
 }
 
-.choice__dor_color label {
+.creat__choice-color label {
   position: relative;
   cursor: pointer;
   font-size: 17px;
   user-select: none;
 }
 
-.choice__dor_color span {
+.creat__choice-color span {
   position: absolute;
-  bottom: -25%;
+  bottom: -15%;
   left: -42%;
   height: 40px;
   width: 40px;
@@ -1738,34 +1641,34 @@
   border: none;
 }
 
-.choice__dor_color label input:checked ~ span {
+.creat__choice-color label input:checked ~ span {
   border: 2px solid #ddb96d;
 }
 
-.choice__dor_color span:after {
+.creat__choice-color span:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.choice__dor_color label input:checked ~ span:after {
+.creat__choice-color label input:checked ~ span:after {
   display: block;
 }
 
-.choice__accessories__block input {
+.creat__choice-accessories-pen input {
   position: absolute;
   opacity: 0;
   сursor: pointer;
 }
 
-.choice__accessories__block label {
+.creat__choice-accessories-pen label {
   position: relative;
   cursor: pointer;
   font-size: 17px;
   user-select: none;
 }
 
-.choice__accessories__block span {
+.creat__choice-accessories-pen span {
   position: absolute;
   bottom: -25%;
   left: 40%;
@@ -1776,20 +1679,20 @@
   border: 2px solid #ddb96d;
 }
 
-.choice__accessories__block label input:checked ~ span {
+.creat__choice-accessories-pen label input:checked ~ span {
 }
 
-.choice__accessories__block span:after {
+.creat__choice-accessories-pen span:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.choice__accessories__block label input:checked ~ span:after {
+.creat__choice-accessories-pen label input:checked ~ span:after {
   display: block;
 }
 
-.choice__accessories__block label span:after {
+.creat__choice-accessories-pen label span:after {
   top: 23%;
   left: 23%;
   width: 14px;
