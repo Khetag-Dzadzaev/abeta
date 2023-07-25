@@ -22,7 +22,7 @@
 
 .container-right {
   max-width: 1320px;
-  margin-right: auto;1
+  margin-right: auto;
   padding: 0 15px;
 }
 
@@ -216,7 +216,6 @@
 }
 
 .burger:hover {
-  border-bottom: #e0b14d solid 3px;
   background: linear-gradient(to top, #f2c35d, #ebcb88);
 }
 
