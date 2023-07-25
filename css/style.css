@@ -17,11 +17,13 @@
 .container-left {
   max-width: 1320px;
   margin-left: auto;
+  padding: 0 15px;
 }
 
 .container-right {
   max-width: 1320px;
-  margin-right: auto;
+  margin-right: auto;1
+  padding: 0 15px;
 }
 
 .swiper-button-prev::after {
@@ -97,15 +99,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  height: 64px;
-  padding: 4px 72px;
+  height: 61px;
+  padding: 0 56px;
 }
 
 .button::before {
   position: absolute;
   left: 15%;
-  top: 32.5%;
+  top: 27%;
   content: url(/images/Ellipse\ 7.svg);
   position: absolute;
   width: 4px;
@@ -158,7 +159,6 @@
 .menu__list {
   display: flex;
   justify-content: flex-end;
-  transition: all 3s ease 1s;
 }
 
 .menu {
@@ -166,7 +166,6 @@
   width: 100%;
   align-items: center;
   height: 64px;
-  display: flex;
   justify-content: flex-end;
 }
 
@@ -209,19 +208,28 @@
 
 .burger {
   display: none;
+  position: relative;
+  width: 53.3px;
+  height: 50px;
+  background: var(--linear, linear-gradient(180deg, #ebcb88 0%, #cda44e 100%));
+  border-radius: 10px;
+}
+
+.burger:hover {
+  border-bottom: #e0b14d solid 3px;
+  background: linear-gradient(to top, #f2c35d, #ebcb88);
 }
 
 .burger__line {
-  width: 35px;
-  height: 2.5px;
+  width: 30px;
+  height: 2px;
   background-color: #493f39;
-  transition: all 0.3s ease 0s;
 }
 
 .burger::before,
 .burger::after {
-  width: 35px;
-  height: 2.5px;
+  width: 30px;
+  height: 2px;
   background-color: #493f39;
   transition: all 0.3s ease 0s;
   position: absolute;
@@ -274,9 +282,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 116px;
-  width: 14%;
-  padding-bottom: 4%;
+  gap: 50px;
+  width: 185px;
 }
 
 .hero__mark-list {
@@ -284,6 +291,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 32px;
 }
 
 .hero__mark-title {
@@ -307,7 +315,7 @@
 
 .hero__swiper {
   width: 700px;
-  margin-top: 20%;
+  margin-top: 19%;
   margin-left: 7%;
 }
 
@@ -359,7 +367,7 @@
 
 .hero__swipper-arrow {
   display: flex;
-  margin-top: 2%;
+  margin-top: 40px;
   gap: 1%;
 }
 
@@ -529,7 +537,7 @@
 
 .advantages-of-cooperation_bg-color > .container > .button {
   margin-top: 84px;
-  width: 250px;
+  width: 220px;
   margin-bottom: 100px;
 }
 
@@ -801,11 +809,11 @@
 }
 
 .servis__block > .button {
-  width: 300px;
+  width: 190px;
 }
 
 .servis__block > .button::before {
-  left: 25%;
+  left: 15%;
 }
 
 .servis__block-bg_color > .container-left {
@@ -1132,6 +1140,10 @@
   margin-top: 32px;
 }
 
+.creat__door-accessories > .button::before{
+  left: 12.5%;
+}
+
 /*implemented_projects*/
 
 .implemented__projects-block{
@@ -1276,7 +1288,11 @@
 }
 
 .about__info>.container-left>.button{
-  width: 250px;
+  width: 188px;
+}
+
+.about__info>.container-left>.button::before{
+  left: 20%;
 }
 
 .about__number-title {
@@ -1419,6 +1435,7 @@
   font-weight: 800;
   line-height: 24px;
   text-decoration: none;
+  border-bottom: #bb9441 solid 3px;
 }
 
 .our-contact__soc-net:hover {
@@ -1503,7 +1520,7 @@
 }
 
 .our-contact__form-flex > .button {
-  width: 300px;
+  width: 174px;
 }
 
 .our-contact__approval {

@@ -32,10 +32,10 @@ var swiper1 = new Swiper(document.getElementById("catalog-door"), {
     prevEl: ".catalog__arrow_left  ",
   },
   breakpoints: {
-    1240: {
+    1800: {
       slidesPerView: 3,
     },
-    768: {
+    1200: {
       slidesPerView: 2,
       centeredSlides: true,
     },
