@@ -158,7 +158,6 @@ let swiper4 = new Swiper(document.getElementById("penswiper"), {
       slidesPerView: 2,
       loop: true,
       initialSlide: 2,
-      centeredSlides: true,
     },
   },
 
