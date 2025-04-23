@@ -1,854 +1,936 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doors</title>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/adaptive.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Doors</title>
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/adaptive.css">
 </head>
+
 <body class="body">
-    <header class="header
+	<header class="header
     " id="header">
-    <div class="container">
-        <div class="header__menu">
-          
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu_item"><a href="#advantages" class="menu__link">О дверях</a></li>
-              <li class="menu_item"><a href="#catalog" class="menu__link">Продукция</a></li>
-              <li class="menu_item"><a href="#servis" class="menu__link">Сервис</a></li>
-              <li class="menu_item"><a href="#about" class="menu__link">О нас</a></li>
-              <li class="menu_item"><a href="#our_contact" class="menu__link">Контакты</a></li>
-          </ul>
+		<div class="container">
+			<div class="header__menu">
 
-          <div class="header__phone">
-              <img src="/images/whots.svg" alt="whotsaap" class="header__phone-img">
-              <a href="#" class="header__phone-link">7(495) 088-18-08</a>
-          </div>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu_item"><a href="#advantages" class="menu__link">О дверях</a></li>
+						<li class="menu_item"><a href="#catalog" class="menu__link">Продукция</a></li>
+						<li class="menu_item"><a href="#servis" class="menu__link">Сервис</a></li>
+						<li class="menu_item"><a href="#about" class="menu__link">О нас</a></li>
+						<li class="menu_item"><a href="#our_contact" class="menu__link">Контакты</a></li>
+					</ul>
 
-          <a href="#" class="button">Обратная связь</a>
-          </nav>
-          <div class="burger">
-            <div class="burger__line"></div>
-          </div>
-        </div>
-    </div>
-    </header>
-    <main class="main ">
-       <section class="hero" >
-        <div class="container-big">
-          <div class="hero_background-img">
-            <div class="container">
-              <div class="hero-block" >
-                <div class="hero__mark">
-                  <h2 class="hero__mark-title"><span class="gold">Двери</span> тут</h2>
-                  <ul class="hero__mark-list">
-                    <li class="hero__mark-item">
-                        <span class="gold_big">7 лет</span><br>Гарантии на дверь
-                    </li>
-                    <li class="hero__mark-item">
-                        <span class="gold_big">100</span><br>моделей дверей
-                            и цветов
-                    </li>
-                    <li class="hero__mark-item">
-                        <span class="gold_big">от 7</span><br>дней изготовление дверей
-                    </li>
-                  </ul>
-                </div>
-                <div class="hero__swiper">
-                    <div class="swiper" id="heroswiper">
-                      <div class="swiper-wrapper" >
-                          <div class="swiper-slide">
-                            <div class="header__swiper-block">
-                              <h1 class="hero__title"><span class="gold">Изготовим и установим</span><br>межкомнатные двери</h1>
-                              <p class="hero__text">Изготавливаем только по индивидуальным размерам</p>
-                              <div class="hero-button">
-                                <img src="images/roulette.png" alt="roulette" class="hero-button__img">
-                                <a href="" class="hero-button__link">Заказать замер</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="header__swiper-block">
-                              <h1 class="hero__title"><span class="gold">Изготовим и установим</span><br>межкомнатные двери</h1>
-                              <p class="hero__text">Изготавливаем только по индивидуальным размерам</p>
-                              <div class="hero-button">
-                                <img src="images/roulette.png" alt="roulette" class="hero-button__img">
-                                <a href="" class="hero-button__link">Заказать замер</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="header__swiper-block">
-                              <h1 class="hero__title"><span class="gold">Изготовим и установим</span><br>межкомнатные двери</h1>
-                              <p class="hero__text">Изготавливаем только по индивидуальным размерам</p>
-                              <div class="hero-button">
-                                <img src="images/roulette.png" alt="roulette" class="hero-button__img">
-                                <a href="" class="hero-button__link">Заказать замер</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="header__swiper-block">
-                              <h1 class="hero__title"><span class="gold">Изготовим и установим</span><br>межкомнатные двери</h1>
-                              <p class="hero__text">Изготавливаем только по индивидуальным размерам</p>
-                              <div class="hero-button">
-                                <img src="images/roulette.png" alt="roulette" class="hero-button__img">
-                                <a href="" class="hero-button__link">Заказать замер</a>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                      <div class="hero__swipper-arrow">
-                        <button class="hero__arrow arrow_hover"><img src="/images/arrow.svg" alt="arrow" class="hero_arrow__img"></button>
-                        <button class="hero__arrow-right arrow_hover"><img src="/images/arrow.svg" alt="arrow" class="hero_arrow__img"></button>
-                      </div>
-                    
-                  </div>
-                  <div class="hero__mark-list_phone">
-                    <ul class="hero__mark-list">
-                      <li class="hero__mark-item">
-                          <span class="gold_big">7 лет</span><br>Гарантии на дверь
-                      </li>
-                      <li class="hero__mark-item">
-                          <span class="gold_big">100</span><br>моделей дверей
-                              и цветов
-                      </li>
-                      <li class="hero__mark-item">
-                          <span class="gold_big">от 7</span><br>дней изготовление дверей
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-          
-       </section>
-       <section class="advantages indent" id="advantages">
-        <div class="container">
-          <div class="advantages__title-block ">
-                <h2 class="title"><span class="gold">Преимущества</span> наших дверей</h2>
-                <p class="text">Наша компания предлагает ряд преимуществ межкомнатной двери, которые делают ее отличным выбором для вашего интерьера.</p>
-          </div>
-          <div class="advantages__info-door ">
-                <div class="advantages__info">
-                    <div class="advantages__characteristic">
-                      <div class="advantages__characteristic-block">
-                      <img src="images/canvas-photo.svg" alt="canvas" class="advantages__characteristic-img">
-                      <p class="advantages__characteristic-title">Полотно</p>
-                      </div>
-                      <p class="text text_left ">Изготовлено из прочного и долговечного материала. Эстетический вид и отделка подходят для разных стилей интерьера. Обеспечивает шумоизоляцию.</p>
-                    </div>
-                    <div class="advantages__characteristic">
-                        <div class="advantages__characteristic-block">
-                          <img src="images/loops-photo.svg" alt="loops" class="advantages__characteristic-img">
-                        <p class="advantages__characteristic-title">Петли</p>
-                        </div>
-                        <p class="text text_left ">Прочные материалы для надежного крепления. Плавное движение для удобства использования.</p>
-                    </div>
-                </div>
-                <div class="advantages__door">
-                  <div class="advantages__door-block">
-                    <img src="images/doors.png" alt="door" class="advantages__door-img">
-                    <button class="advantages__door-button_start button_plus text text-color_white">+</button>
-                    <button class="advantages__door-button_mid-1 button_plus text text-color_white">+</button>
-                    <button class="advantages__door-button_mid-2  button_plus text text-color_white">+</button>
-                    <button class="advantages__door-button_end button_plus text text-color_white">+</button>
-                  </div>
-                    <a href="" class="button">Заказать консультацию</a>
-                </div>
-                <div class="advantages__info">
-                    <div class="advantages__characteristic">
-                        <div class="advantages__characteristic-block">
-                          <img src="images/door frame-photo.svg" alt="box" class="advantages__characteristic-img">
-                          <p class="advantages__characteristic-title">Коробка</p>
-                        </div>
-                        <p  class="text text_left ">Профессиональная установка, коробка разработана с учетом правильных размеров и специальных функций для легкой и точной установки двери.</p>
-                    </div>
-                    <div class="advantages__characteristic">
-                        <div class="advantages__characteristic-block">
-                          <img src="images/lock-photo.svg" alt="locks" class="advantages__characteristic-img locks">
-                          <p class="advantages__characteristic-title">Замки</p>
-                        </div>
-                        
-                        <p class="text text_left ">Надежная защита помещения. Прост в использовании. Высокое качество и долговечность.</p>
-                    </div>
-                </div>
-          </div>
-        </div>
-      </section>
-      <section class="advantages-of-cooperation" id="advantages_of_cooperation">
-        <div class="container-big">
-          <div class="advantages-of-cooperation_bg_img">
-            <div class="advantages-of-cooperation_bg-color ">
-              <div class="container ">
-                <div class="advantages-of-cooperation__flex ">
-                      <h2 class="title text-color_white"><span class="gold">Преимущества</span> сотрудничества с нами</h2>
-                    <div class="advantages-of-cooperation__blocks">
-                        <div class="advantages-of-cooperation__block">
-                            <p class="advantages-of-cooperation__number">01.</p>
-                            <p class="text text-color_white text_left">Гарантируем высокое качество наших дверей благодаря использованию прочных материалов и профессиональному изготовлению.</p>
-                        </div>
-                        <div class="advantages-of-cooperation__block">
-                            <p class="advantages-of-cooperation__number">02.</p>
-                            <p class="text text-color_white text_left">Наша компания предлагает широкий выбор моделей и отделок, подходящих для любых помещений и архитектурных решений.</p>
-                        </div>
-                        <div class="advantages-of-cooperation__block">
-                            <p class="advantages-of-cooperation__number">03.</p>
-                            <p class="text text-color_white text_left">Мы гарантируем надежность, соблюдение сроков и стремимся к долгосрочному взаимовыгодному сотрудничеству.</p>
-                        </div>
-                        <div class="advantages-of-cooperation__block">
-                            <p class="advantages-of-cooperation__number">04.</p>
-                            <p class="text text-color_white text_left">Мы предлагаем застройщикам индивидуальный подход, учитывая их проекты и требования при выборе дверей. Мы готовы адаптироваться к различным стилям и дизайнам интерьеров.</p>
-                        </div>
-                        <div class="advantages-of-cooperation__block">
-                            <p class="advantages-of-cooperation__number">05.</p>
-                            <p class="text text-color_white text_left">Мы предлагаем застройщикам индивидуальный подход, учитывая их проекты и требования при выборе дверей. Мы готовы адаптироваться к различным стилям и дизайнам интерьеров.</p>
-                        </div>
-                        <div class="advantages-of-cooperation__block">
-                            <p class="advantages-of-cooperation__number">06.</p>
-                            <p class="text text-color_white text_left">Предоставляем полную техническую поддержку и консультации застройщикам на протяжении всего сотрудничества, гарантируя успешную установку дверей.</p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <a href="" class="button">Начать сотрудничество</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        
-      </section>
-      <section class="catalog indent" id="catalog">
-            <h2 class="title"><span class="gold">Каталог</span> дверей</h2> 
-            <div class="swiper" id="catalog-door">
-              <div class=" swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="catalog__door">
-                    <div class="catalog__door-left">
-                        <img src="/images/door1.png" alt="door" class="catalog__door-img">
-                        <div class="catalog__door-color">
-                            <h2 class="catalog__color-title">Виды декора двери:</h2>
-                            <img src="/images/color1.svg" alt="color1" class="catalog__img">
-                            <img src="/images/color2.svg" alt="color2" class="catalog__img">
-                            <img src="/images/color3.svg" alt="color3" class="catalog__img">
-                            <img src="/images/color3.svg" alt="color4" class="catalog__img">
-                        </div>
-                        <div class="catalog__door-glass">
-                            <h2 class="catalog__glass-title">Виды стекл:</h2>
-                            <img src="/images/glass1.svg" alt="glass1" class="catalog__img ">
-                            <img src="/images/glass2.svg" alt="glass2" class="catalog__img ">
-                            <img src="/images/glass3.svg" alt="glass3" class="catalog__img ">
-                            <img src="/images/glass4.png" alt="glass4" class="catalog__img ">
-                        </div>
-                    </div>
-                    <div class="catalog__door-right">
-                        <h2 class="catalog__color-title catalog__color-title_big">Дверное полотно Ps-33 ash white</h2>
-                        <p class="text text_left">Дверь Делла BLK новый стиль Коллекция – ностра Модель – Делла BLK. Дверные полотна коллекции "НОСТРА" облицованы качественной ПВХ DeLuxe пленкой известных мировых производителей.</p>
-                        <p class="catalog__color-title">Характеристики:</p>
-                        <p class="text text_left">
-                            Высота: 2000 мм<br>
-                            Ширина: 600, 700, 800, 900 мм<br>
-                            Толщина: 40 мм<br>
-                            Страна изготовитель: Россия
-                        </p>
-                        <p class="catalog__color-title">Стоимость:</p>
-                        <p class="catalog__cost">от 34 000 руб.</p>
-                        <a href="" class="button catalog__button">Заказать консультацию</a>
-                    </div>
-                  </div>
-                    
-                </div>
-                <div class="swiper-slide">
-                  <div class="catalog__door">
-                    <div class="catalog__door-left">
-                        <img src="/images/door2.png" alt="door" class="catalog__door-img">
-                        <div class="catalog__door-color">
-                          <h2 class="catalog__color-title">Виды декора двери:</h2>
-                          <img src="/images/color1.svg" alt="color1" class="catalog__img">
-                          <img src="/images/color2.svg" alt="color2" class="catalog__img">
-                          <img src="/images/color3.svg" alt="color3" class="catalog__img">
-                          <img src="/images/color4.svg" alt="color4" class="catalog__img">
-                        </div>
-                        <div class="catalog__door-glass ">
-                            <h2 class="catalog__glass-title">Виды стекл:</h2>
-                            <img src="/images/glass1.svg" alt="glass1" class="catalog__img">
-                            <img src="/images/glass2.svg" alt="glass2" class="catalog__img">
-                            <img src="/images/glass3.svg" alt="glass3" class="catalog__img">
-                            <img src="/images/glass4.svg" alt="glass4" class="catalog__img">
-                        </div>
-                    </div>
-                    <div class="catalog__door-right">
-                            <h2 class="catalog__color-title catalog__color-title_big">Дверное полотно Ps-33 ash white</h2>
-                            <p class="text text_left">Дверь Делла BLK новый стиль Коллекция – ностра Модель – Делла BLK. Дверные полотна коллекции "НОСТРА" облицованы качественной ПВХ DeLuxe пленкой известных мировых производителей.</p>
-                            <p class="catalog__color-title">Характеристики:</p>
-                            <p class="text text_left">
-                                Высота: 2000 мм<br>
-                                Ширина: 600, 700, 800, 900 мм<br>
-                                Толщина: 40 мм<br>
-                                Страна изготовитель: Россия
-                            </p>
-                            <p class="catalog__color-title">Стоимость:</p>
-                            <p class="catalog__cost">от 34 000 руб.</p>
-                            <a href="" class="button catalog__button">Заказать консультацию</a>
-                    </div>
-                  </div>
-                    
-                </div>
-                <div class="swiper-slide">
-                  <div class="catalog__door">
-                    <div class="catalog__door-left">
-                        <img src="images/door3.png" alt="door" class="catalog__door-img">
-                        <div class="catalog__door-color">
-                          <h2 class="catalog__color-title">Виды декора двери:</h2>
-                          <img src="/images/color1.svg" alt="color1" class="catalog__img">
-                          <img src="/images/color2.svg" alt="color2" class="catalog__img">
-                          <img src="/images/color3.svg" alt="color3" class="catalog__img">
-                          <img src="/images/color4.svg" alt="color4" class="catalog__img">
-                        </div>
-                        <div class="catalog__door-glass">
-                            <h2 class="catalog__glass-title">Виды стекл:</h2>
-                            <img src="/images/glass1.svg" alt="glass1" class="catalog__img">
-                            <img src="/images/glass2.svg" alt="glass2" class="catalog__img">
-                            <img src="/images/glass3.svg" alt="glass3" class="catalog__img">
-                            <img src="/images/glass4.svg" alt="glass4" class="catalog__img">
-                        </div>
-                    </div>
-                    <div class="catalog__door-right">
-                            <h2 class="catalog__color-title catalog__color-title_big">Дверное полотно Ps-33 ash white</h2>
-                            <p class="text text_left">Дверь Делла BLK новый стиль Коллекция – ностра Модель – Делла BLK. Дверные полотна коллекции "НОСТРА" облицованы качественной ПВХ DeLuxe пленкой известных мировых производителей.</p>
-                            <p class="catalog__color-title">Характеристики:</p>
-                            <p class="text text_left">
-                                Высота: 2000 мм<br>
-                                Ширина: 600, 700, 800, 900 мм<br>
-                                Толщина: 40 мм<br>
-                                Страна изготовитель: Россия
-                            </p>
-                            <p class="catalog__color-title">Стоимость:</p>
-                            <p class="catalog__cost">от 34 000 руб.</p>
-                            <a href="" class="button catalog__button">Заказать консультацию</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="catalog__door">
-                    <div class="catalog__door-left">
-                        <img src="/images/door1.png" alt="door" class="catalog__door-img">
-                        <div class="catalog__door-color">
-                          <h2 class="catalog__color-title">Виды декора двери:</h2>
-                          <img src="/images/color1.svg" alt="color1" class="catalog__img">
-                          <img src="/images/color2.svg" alt="color2" class="catalog__img">
-                          <img src="/images/color3.svg" alt="color3" class="catalog__img">
-                          <img src="/images/color4.svg" alt="color4" class="catalog__img">
-                        </div>
-                        <div class="catalog__door-glass">
-                            <h2 class="catalog__glass-title">Виды стекл:</h2>
-                            <img src="/images/glass1.svg" alt="glass1" class="catalog__img">
-                            <img src="/images/glass2.svg" alt="glass2" class="catalog__img">
-                            <img src="/images/glass3.svg" alt="glass3" class="catalog__img">
-                            <img src="/images/glass4.svg" alt="glass4" class="catalog__img">
-                        </div>
-                    </div>
-                    <div class="catalog__door-right">
-                            <h2 class="catalog__color-title catalog__color-title_big">Дверное полотно
-                            Ps-33 ash white</h2>
-                            <p class="text text_left">Дверь Делла BLK новый стиль Коллекция – ностра Модель – Делла BLK. Дверные полотна коллекции "НОСТРА" облицованы качественной ПВХ DeLuxe пленкой известных мировых производителей.</p>
-                            <p class="catalog__color-title">Характеристики:</p>
-                            <p class="text text_left">
-                                Высота: 2000 мм<br>
-                                Ширина: 600, 700, 800, 900 мм<br>
-                                Толщина: 40 мм<br>
-                                Страна изготовитель: Россия
-                            </p>
-                            <p class="catalog__color-title">Стоимость:</p>
-                            <p class="catalog__cost">от 34 000 руб.</p>
-                            <a href="" class="button catalog__button">Заказать консультацию</a>
-                    </div>
-                  </div>
-                    
-                </div>
-              </div>
-              <div class="catalog__arrow 
-              catalog__arrow_left arrow_hover swiper-button-prev"><img src="/images/arrow.svg" alt="arrow" class="catalog_arrow__img "></div>
-              <div class="catalog__arrow_right arrow_hover swiper-button-next"><img src="/images/arrow.svg" alt="arrow" class="catalog_arrow__img"></div>
-            </div>
-            <h3 class="catalog__accessories-title">Каталог фурнитуры</h3>
-            <div class="swiper" id="accessories">
-                <div class=" swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="catalog__accessories-block">
-                        <img src="/images/loop.png" alt="accessories_img" class="catalog__accessories-img">
-                        <p class="catalog__accessories-text">Петля дверная врезная Safita 125*75*3 4BB серый</p>
-                    </div>
-                        
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="catalog__accessories-block">
-                      <img src="/images/pen.png" alt="accessories_img" class="catalog__accessories-img accessories__img-padding ">
-                      <p class="catalog__accessories-text">Ручка дверная MH- 21 SH/BN</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="catalog__accessories-block">
-                        <img src="/images/loop2.png" alt="accessories_img" class="catalog__accessories-img">
-                        <p class="catalog__accessories-text">Петля дверная врезная Safita 125*75*3 4BB BLACK черный</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="catalog__accessories-block">
-                        <img src="/images/pen2.png" alt="accessories_img" class="catalog__accessories-img ">
-                        <p class="catalog__accessories-text">Ручка дверна на планке Forme Naxos 215/P35(Atlas)</p>
-                    </div>
-                        
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="catalog__accessories-block">
-                        <img src="/images/loop.png" alt="accessories_img" class="catalog__accessories-img">
-                        <p class="catalog__accessories-text">Петля дверная врезная Safita 125*75*3 4BB серый</p>
-                    </div>
-                        
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="catalog__accessories-block">
-                      <img src="/images/pen.png" alt="accessories_img" class="catalog__accessories-img accessories__img-padding ">
-                      <p class="catalog__accessories-text">Ручка дверная MH- 21 SH/BN</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="catalog__accessories-block">
-                        <img src="/images/loop2.png" alt="accessories_img" class="catalog__accessories-img">
-                        <p class="catalog__accessories-text">Петля дверная врезная Safita 125*75*3 4BB BLACK черный</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="catalog__accessories-block">
-                        <img src="/images/pen2.png" alt="accessories_img" class="catalog__accessories-img ">
-                        <p class="catalog__accessories-text">Ручка дверна на планке Forme Naxos 215/P35(Atlas)</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="catalog__arrow arrow_hover  catalog__arrow_left swiper-button-prev catalog__accessories_left"><img src="/images/arrow.svg " alt="arrow" class="catalog_arrow__img "></div>
-                <div class="catalog__arrow catalog__arrow_right arrow_hover swiper-button-next catalog__accessories_right"><img src="/images/arrow.svg" alt="arrow" class="catalog_arrow__img"></div>
-            </div>
-      </section>
-      <section class="servis" id="servis">
-        <div class="container-big">
-          <div class="servis__blocks">
-            <div class="servis__block-left">
-                <div class="servis__block-bg-color">
-                  <div class="container-left">
-                    <div class="servis__block">
-                      <h2 class="title text-color_white text_left">Полный сервис услуг</h2>
-                      <p class="text text_left text-color_white">При заказе установки двери у нас, вы получает не только высококачественные двери, но и полный спектр услуг по их установке. Мы обеспечиваем профессиональный монтаж и гарантируем качественный результат. Кроме того, для наших клиентов-застройщиков мы предлагаем СПЕЦИАЛЬНУЮ СКИДКУ на установку двери.<br><br><br>Мы ценим ваше доверие и стремимся обеспечить вам удобство и выгодные условия сотрудничества.</p>
-                      <a href="" class="button">Заказать установку</a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="servis__block-right">
-              <div class="servis__door-block">
-                <div class="servis__door-img">
-                  <img src="images/door.png" alt="door" class="servis__door-img_img">
-                  <button class="button_plus text text-color_white servis__button_start" >+</button>
-                  <p class="servis__door-text text_left text servis__door-text_start">Сохраним ремонт (обои, плитку) в целостности</p>
-                  <button class="button_plus text text-color_white servis__button_mid">+</button>
-                  <p class="servis__door-text text_left text servis__door-text_mid">Установим дверь за 1 - 1,5 часа</p>
-                  <button class="button_plus text text-color_white servis__button_end">+</button>
-                  <p class="servis__door-text text_left text servis__door-text_end">Дверь прекрасно открывается, не затрагивает коробку</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="creat indent" id="creat_your_door">
-          <div class="container">
-              <h2 class="title"><span class="gold">Создай</span> свою дверь</h2>
-              <div class="creat__block ">
-                <div class="creat__door-block">
-                    <div class="creat__door-left">
-                        <div class="creat__door-background">
-                            <img src="/images/void_door.png" alt="void_door" class="creat__door-img">
-                        </div>
-                        <p class="creat__door-text"><span class="gold">20% скидка</span><br>на установку двери</p>
-                    </div>
-                    <div class="creat__door-right">
-                        <div class="creat__door-selection">
-                            <h2 class="creat__text">Выбор двери:</h2>
-                            <div class="creat__choice-doors">
-                                <div class="creat__choice-door">
-                                    <label for="choice_radio1" class="creat__radio">
-                                        <img src="images/choice_door1.png" alt="door" class="creat__radio-img">
-                                        <p class="creat__radio-text text">PS-33 wenge</p>
-                                        <input type="radio" value="1" id="choice_radio1" name="check_box" class="creat__radio-checkbox">
-                                        <span></span>
-                                    </label>
-                                </div>
-                                <div class="creat__choice-door">
-                                    <label for="choice_radio2" class="creat__radio">
-                                        <img src="images/choice_door2.png" alt="door" class="creat__radio-img">
-                                        <p class="creat__radio-text text">PS-33 wenge</p>
-                                        <input type="radio" value="2" id="choice_radio2" name="check_box" class="creat__radio-checkbox">
-                                        <span></span>
-                                    </label>
-                                </div>
-                                <div class="creat__choice-door">
-                                    <label for="choice_radio3" class="creat__radio">
-                                        <img src="images/choice_door3.png" alt="door" class="creat__radio-img">
-                                        <p class="creat__radio-text text">PS-17 wenge</p>
-                                        <input type="radio" value="3" id="choice_radio3" name="check_box" class="creat__radio-checkbox">
-                                        <span></span>
-                                    </label>
-                                </div>
-                                <div class="creat__choice-door">
-                                    <label for="choice_radio4" class="creat__radio">
-                                        <img src="images/choice_door4.png" alt="door" class="creat__radio-img">
-                                        <p class="creat__radio-text text">PSK-8 riviera cru</p>
-                                        <input type="radio" value="4" id="choice_radio4" name="check_box" class="creat__radio-checkbox">
-                                        <span></span></label>
-                                </div>
-                                <div class="creat__choice-door">
-                                    <label for="choice_radio5" class="creat__radio">
-                                        <img src="images/choice_door5.png" alt="door" class="creat__radio-img">
-                                        <p class="creat__radio-text text">PSK-10 riviera ice</p>
-                                        <input type="radio" value="5" id="choice_radio5" name="check_box" class="creat__radio-checkbox">
-                                        <span></span></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="creat__door-color">
-                            <h2 class="creat__text">Выбор декора двери:</h2>
-                            <div class="creat__choice-color">
-                                <label class="creat__choice-color-radio" for="color1">
-                                    <img src="images/color1.svg" alt="dor_color" class="creat__choice-color-radio_img">
-                                    <input type="radio" id="color1" value="1" class="creat__choice-color-radio_checkbox" name="check_box_color">
-                                    <span></span>
-                                </label>
-                                <label class="creat__choice-color-radio" for="color2">
-                                    <img src="images/color2.svg"  alt="dor_color" class="creat__choice-color-radio_img">
-                                    <input type="radio" id="color2"  value="2" class="creat__choice-color-radio_checkbox" name="check_box_color">
-                                    <span></span>
-                                </label>
-                                <label class="creat__choice-color-radio" for="color3">
-                                    <img src="images/color3.svg"alt="dor_color" class="creat__choice-color-radio_img">
-                                    <input type="radio" id="color3"  value="3"  class="creat__choice-color-radio_checkbox" name="check_box_color">
-                                    <span></span>
-                                </label>
-                                <label class="creat__choice-color-radio" for="color4">
-                                    <img src="images/color4.svg" alt="dor_color" class="creat__choice-color-radio_img">
-                                    <input type="radio" id="color4" value="4" class="creat__choice-color-radio_checkbox" name="check_box_color">
-                                    <span></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="creat__door-accessories">
-                            <h2 class="creat__text">Выбор фурнитруты:</h2>
-                            <div class="swiper creat__choice-accessories" id="penswiper">
-                              
-                              <div class="swiper-wrapper creat__choice-accessories-blocks">
-                                  <div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen" >
-                                    <label for="choice_radio11" class="creat__choice-accessories-radio">
-                                           <img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
-                                           <p class="creat__choice-accessories-radio_text">Престиж никель</p>
-                                           <input type="radio" value="1" id="choice_radio11" name="check_box" class="creat__choice-accessories-radio_checkbox">
-                                           <span></span></label>
-                                   </div>
-                                  <div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen" >
-                                  <label for="choice_radio12" class="creat__choice-accessories-radio">
-                                    <img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
-                                    <p class="creat__choice-accessories-radio_text">Елит</p>
-                                    <input type="radio" value="2" id="choice_radio12" name="check_box" class="creat__choice-accessories-radio_checkbox">
-                                    <span></span>
-                                  </label>
-                                  </div>
-                                  <div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen" >
-                                    <label for="choice_radio13" class="creat__choice-accessories-radio">
-                                          <img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
-                                          <p class="creat__choice-accessories-radio_text">VIP латунь</p>
-                                          <input type="radio" value="3" id="choice_radio13" name="check_box" class="creat__choice-accessories-radio_checkbox">
-                                          <span></span></label>
-                                  
-                                  </div>
-                                  <div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen" >
-                                    <label for="choice_radio14" class="creat__choice-accessories-radio">
-                                          <img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
-                                          <p class="creat__choice-accessories-radio_text">Модерн латунь</p>
-                                          <input type="radio" value="4" id="choice_radio14" name="check_box" class="creat__choice-accessories-radio_checkbox">
-                                          <span></span></label>
-                                  </div>
-                                  <div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen" >
-                                    <label for="choice_radio11" class="creat__choice-accessories-radio">
-                                           <img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
-                                           <p class="creat__choice-accessories-radio_text">Престиж никель</p>
-                                           <input type="radio" value="1" id="choice_radio11" name="check_box" class="creat__choice-accessories-radio_checkbox">
-                                           <span></span></label>
-                                   </div>
-                                  <div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen" >
-                                  <label for="choice_radio12" class="creat__choice-accessories-radio">
-                                    <img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
-                                    <p class="creat__choice-accessories-radio_text">Елит</p>
-                                    <input type="radio" value="2" id="choice_radio12" name="check_box" class="creat__choice-accessories-radio_checkbox">
-                                    <span></span>
-                                  </label>
-                                  </div>
-                                  <div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen" >
-                                    <label for="choice_radio13" class="creat__choice-accessories-radio">
-                                          <img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
-                                          <p class="creat__choice-accessories-radio_text">VIP латунь</p>
-                                          <input type="radio" value="3" id="choice_radio13" name="check_box" class="creat__choice-accessories-radio_checkbox">
-                                          <span></span></label>
-                                  
-                                  </div>
-                                  <div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen" >
-                                    <label for="choice_radio14" class="creat__choice-accessories-radio">
-                                          <img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
-                                          <p class="creat__choice-accessories-radio_text">Модерн латунь</p>
-                                          <input type="radio" value="4" id="choice_radio14" name="check_box" class="creat__choice-accessories-radio_checkbox">
-                                          <span></span></label>
-                                  </div>
-                                  <div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen" >
-                                    <label for="choice_radio11" class="creat__choice-accessories-radio">
-                                           <img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
-                                           <p class="creat__choice-accessories-radio_text">Престиж никель</p>
-                                           <input type="radio" value="1" id="choice_radio11" name="check_box" class="creat__choice-accessories-radio_checkbox">
-                                           <span></span></label>
-                                   </div>
-                                  <div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen" >
-                                  <label for="choice_radio12" class="creat__choice-accessories-radio">
-                                    <img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
-                                    <p class="creat__choice-accessories-radio_text">Елит</p>
-                                    <input type="radio" value="2" id="choice_radio12" name="check_box" class="creat__choice-accessories-radio_checkbox">
-                                    <span></span>
-                                  </label>
-                                  </div>
-                                  <div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen" >
-                                    <label for="choice_radio13" class="creat__choice-accessories-radio">
-                                          <img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
-                                          <p class="creat__choice-accessories-radio_text">VIP латунь</p>
-                                          <input type="radio" value="3" id="choice_radio13" name="check_box" class="creat__choice-accessories-radio_checkbox">
-                                          <span></span></label>
-                                  
-                                  </div>
-                                  <div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen" >
-                                    <label for="choice_radio14" class="creat__choice-accessories-radio">
-                                          <img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
-                                          <p class="creat__choice-accessories-radio_text">Модерн латунь</p>
-                                          <input type="radio" value="4" id="choice_radio14" name="check_box" class="creat__choice-accessories-radio_checkbox">
-                                          <span></span></label>
-                                  </div>
-                              </div>
-                            </div>
-                            <button class="creat__choice-accessories-button_right creat__choice-accessories-arrow_hover swiper-button-next">
-                              <img src="images/arrow.svg" alt="" class="creat__choice-accessories-button_img">
-                            </button>
-                            <button class="creat__choice-accessories-button_left creat__choice-accessories-arrow_hover swiper-button-prev">
-                              <img src="images/arrow.svg" alt="" class="creat__choice-accessories-button_img">
-                            </button>
-                            <a href="" class="button">
-                              Заказать Консультацию
-                            </a>
-                        </div>
-                    </div>
-                </div>
-              </div>
-          </div>
-      </section>
-      <section class="about container-big" id="about">
-        <div class="container-big">
-          <div class="about__background-color ">
-              <div class="about__flex">
-                  <div class="about__info">
-                    <div class="container-left">
-                      <h2 class="title text_left text-color_white">О нас</h2>
-                      <p class="text text_left text-color_white">Мы - компания, специализирующаяся на производстве<br>и установке межкомнатных дверей высокого качества. Мы<br>стремимся предложить нашим клиентам широкий<br>ассортимент моделей, отвечающих самым требовательным<br>вкусам и стилям интерьера.</p>
-                      <a href="" class="button">Смотреть 3-D тур</a>
-                    </div>
-                  </div>
-                  <div class="about__number">
-                    <div class="about__background-img">
-                      <div class="about__background-color">
-                        <div class="container-right">
-                          <div class="about__number-blocks">
-                            <div class="about__number-block bottom-line">
-                             <h2 class="about__number-title">200 +</h2>
-                             <p class="text text_left text-color_white">установленных  дверей ежегодно</p>
-                              </div>
-                              <div class="about__number-block  bottom-line">
-                                <h2 class="about__number-title">95%</h2>
-                                <p class="text text_left text-color_white">клиентов рекомендуют нас своим знакомым:</p>
-                              </div>
-                              <div class="about__number-block about__block-width">
-                                <h2 class="about__number-title">100%</h2>
-                                <p class="text text_left text-color_white">удовлетворенность клиентов</p>
-                              </div>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-          </div>
-        </div>
-      </section>
-      <section class="implemented__projects  indent" id="implemented_projects">
-        <div class="container_big">
-          <h2 class="title"><span class="gold">Реализованные</span> проекты</h2>
-            <div class="implemented__projects-swiper swiper" id="implemented_project">
-              <div class=" swiper-wrapper">
-                <div class="implemented__projects-block swiper-slide">
-                    <div class="implemented__projects-button-block">
-                        <button class="implemented__projects-button"></button>
-                    </div>
-                    <p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
-                </div>
-                <div class="implemented__projects-block swiper-slide">
-                    <div class="implemented__projects-button-block">
-                        <button class="implemented__projects-button"></button>
-                    </div>
-                    <p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
-                </div>
-                <div class="implemented__projects-block1 swiper-slide">
-                    <div class="implemented__projects-button-block">
-                        <button class="implemented__projects-button"></button>
-                    </div>
-                    <p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
-                </div>
-                <div class="implemented__projects-block swiper-slide">
-                    <div class="implemented__projects-button-block">
-                        <button class="implemented__projects-button"></button>
-                    </div>
-                    <p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
-                </div>
-                <div class="implemented__projects-block swiper-slide">
-                    <div class="implemented__projects-button-block">
-                        <button class="implemented__projects-button"></button>
-                    </div>
-                    <p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
-                </div>
-                <div class="implemented__projects-block1 swiper-slide">
-                    <div class="implemented__projects-button-block">
-                        <button class="implemented__projects-button"></button>
-                    </div>
-                    <p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
-                </div>
-                <div class="implemented__projects-block swiper-slide">
-                  <div class="implemented__projects-button-block">
-                      <button class="implemented__projects-button"></button>
-                  </div>
-                  <p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
-              </div>
-              <div class="implemented__projects-block swiper-slide">
-                  <div class="implemented__projects-button-block">
-                      <button class="implemented__projects-button"></button>
-                  </div>
-                  <p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
-              </div>
-              <div class="implemented__projects-block1 swiper-slide">
-                  <div class="implemented__projects-button-block">
-                      <button class="implemented__projects-button"></button>
-                  </div>
-                  <p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
-              </div>
-              <div class="implemented__projects-block swiper-slide">
-                  <div class="implemented__projects-button-block">
-                      <button class="implemented__projects-button"></button>
-                  </div>
-                  <p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
-              </div>
-              <div class="implemented__projects-block swiper-slide">
-                  <div class="implemented__projects-button-block">
-                      <button class="implemented__projects-button"></button>
-                  </div>
-                  <p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
-              </div>
-              <div class="implemented__projects-block1 swiper-slide">
-                  <div class="implemented__projects-button-block">
-                      <button class="implemented__projects-button"></button>
-                  </div>
-                  <p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
-              </div>
-            </div>
-            <button class="implemented__arrow-left implemented__arrow_hover  swiper-button-prev swiper-button-next"><img src="/images/arrow.svg" alt="arrow" class="project_arrow_img"></button>            <button class="implemented__arrow-right implemented__arrow_hover swiper-button-next"><img src="/images/arrow.svg" alt="arrow" class="project_arrow_img"></button>
-            </div>
-        </div>
-      </section>
-      <section class="our-contact" id="our_contact">
-            <h2 class="title"><span class="gold">Наши</span> контакты</h2>
-            <div class="our-contact__info">
-              <div class="container">
-                <div class="our-contact__info-flex">
-                  <div class="our-contact__info-block our-contact__info-block_width">
-                    <img src="/images/icon-geo.png" alt="gps" class="our-contact__gps_img">
-                    <a href="" class="our-contact__text">Москва, ул. Профсоюзная 123</a>
-                  </div>
+					<div class="header__phone">
+						<img src="images/whots.svg" alt="whotsaap" class="header__phone-img">
+						<a href="#" class="header__phone-link">7(495) 088-18-08</a>
+					</div>
 
-                  <div class="our-contact__info-block">
-                    <img src="/images/icon-email.svg" alt="mail" class="our_contact__img">
-                    <a href="" class="our-contact__text">info@example.com</a>
-                   </div>
+					<a href="#" class="button">Обратная связь</a>
+				</nav>
+				<div class="burger">
+					<div class="burger__line"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main ">
+		<section class="hero">
+			<div class="container-big">
+				<div class="hero_background-img">
+					<div class="container">
+						<div class="hero-block">
+							<div class="hero__mark">
+								<h2 class="hero__mark-title"><span class="gold">Двери</span> тут</h2>
+								<ul class="hero__mark-list">
+									<li class="hero__mark-item">
+										<span class="gold_big">7 лет</span><br>Гарантии на дверь
+									</li>
+									<li class="hero__mark-item">
+										<span class="gold_big">100</span><br>моделей дверей
+										и цветов
+									</li>
+									<li class="hero__mark-item">
+										<span class="gold_big">от 7</span><br>дней изготовление дверей
+									</li>
+								</ul>
+							</div>
+							<div class="hero__swiper">
+								<div class="swiper" id="heroswiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="header__swiper-block">
+												<h1 class="hero__title"><span class="gold">Изготовим и установим</span><br>межкомнатные двери
+												</h1>
+												<p class="hero__text">Изготавливаем только по индивидуальным размерам</p>
+												<div class="hero-button">
+													<img src="images/roulette.png" alt="roulette" class="hero-button__img">
+													<a href="" class="hero-button__link">Заказать замер</a>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="header__swiper-block">
+												<h1 class="hero__title"><span class="gold">Изготовим и установим</span><br>межкомнатные двери
+												</h1>
+												<p class="hero__text">Изготавливаем только по индивидуальным размерам</p>
+												<div class="hero-button">
+													<img src="images/roulette.png" alt="roulette" class="hero-button__img">
+													<a href="" class="hero-button__link">Заказать замер</a>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="header__swiper-block">
+												<h1 class="hero__title"><span class="gold">Изготовим и установим</span><br>межкомнатные двери
+												</h1>
+												<p class="hero__text">Изготавливаем только по индивидуальным размерам</p>
+												<div class="hero-button">
+													<img src="images/roulette.png" alt="roulette" class="hero-button__img">
+													<a href="" class="hero-button__link">Заказать замер</a>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="header__swiper-block">
+												<h1 class="hero__title"><span class="gold">Изготовим и установим</span><br>межкомнатные двери
+												</h1>
+												<p class="hero__text">Изготавливаем только по индивидуальным размерам</p>
+												<div class="hero-button">
+													<img src="images/roulette.png" alt="roulette" class="hero-button__img">
+													<a href="" class="hero-button__link">Заказать замер</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="hero__swipper-arrow">
+										<button class="hero__arrow arrow_hover"><img src="images/arrow.svg" alt="arrow"
+												class="hero_arrow__img"></button>
+										<button class="hero__arrow-right arrow_hover"><img src="images/arrow.svg" alt="arrow"
+												class="hero_arrow__img"></button>
+									</div>
 
-                  <div class="our-contact__phone">
-                    <img src="/images/whots.svg" alt="whotsaap" class="our-contact__phone__img">
-                    <a href="" class="our-contact__phone-text">7(495) 088-18-08</a>
-                  </div>
+								</div>
+								<div class="hero__mark-list_phone">
+									<ul class="hero__mark-list">
+										<li class="hero__mark-item">
+											<span class="gold_big">7 лет</span><br>Гарантии на дверь
+										</li>
+										<li class="hero__mark-item">
+											<span class="gold_big">100</span><br>моделей дверей
+											и цветов
+										</li>
+										<li class="hero__mark-item">
+											<span class="gold_big">от 7</span><br>дней изготовление дверей
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                <a href="" class="our-contact__soc-net">Instagram</a>
-                <a href="" class="our-contact__soc-net">Facebook</a>
-                </div>
-              </div>
-            </div>
-            <div class="our-contact__block container_big">
-                <div class="map" id="map"></div>
-                <form action="/" class="our-contact__form">
-                  <div class="container-right">
-                    <div class="our-contact__form-flex">
-                      <h2 class="our-contact__title">Форма связи с нами:</h2>
-                    <div class="our-contact__input-block">
-                        <p class="our-contact__form-text">Ваше имя*</p>
-                        <input type="text" name="name" placeholder="Введите имя" class="our-contact__input">
-                    </div>
-                    <div class="our-contact__input-block">
-                        <p class="our-contact__form-text">Ваш телефон*</p>
-                        <input type="text" name="phone" placeholder="Введите телефон" class="our-contact__input">
-                    </div>
-                    <div class="our-contact__input-block">
-                        <p class="our-contact__form-text">Ваше email*</p>
-                        <input type="email" name="email" placeholder="Ваша почта" class="our-contact__input">
-                    </div>
-                    <a href="" class="button">Отправить заявку</a>
-                    <a href="" class="our-contact__approval">Нажимая на кнопку, вы даете согласие на  обработку<br> ваших персональных данных</a>
-                    </div>
-                  </div>
-                </form>
-            </div>
-      </section>
-    </main>
-    
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__flex">
-          <p class="footer__text">© Все права защищены</p>
-        <a href="#header" class="footer__button"><img src="/images/arrow_footer.svg" alt="arrow" class="footer_arrow ">Наверх</a>
-        <p class="footer__text text_derection">Разработка сайта</p>
-        </div>
-      </div>
-    </footer>
-    <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=ваш API-ключ&?apikey=ваш API-ключ&load=package.standard&lang=ru-RU" ></script>
-    <script src="./js/swiper.js"></script>
-    <script src="./js/slider.js"></script>
-    <script src="./js/burger.js"></script>
-    <script src="./js/button.js"></script>
-    <script src="./js/map.js"></script>
+		</section>
+		<section class="advantages indent" id="advantages">
+			<div class="container">
+				<div class="advantages__title-block ">
+					<h2 class="title"><span class="gold">Преимущества</span> наших дверей</h2>
+					<p class="text">Наша компания предлагает ряд преимуществ межкомнатной двери, которые делают ее отличным
+						выбором для вашего интерьера.</p>
+				</div>
+				<div class="advantages__info-door ">
+					<div class="advantages__info">
+						<div class="advantages__characteristic">
+							<div class="advantages__characteristic-block">
+								<img src="images/canvas-photo.svg" alt="canvas" class="advantages__characteristic-img">
+								<p class="advantages__characteristic-title">Полотно</p>
+							</div>
+							<p class="text text_left ">Изготовлено из прочного и долговечного материала. Эстетический вид и отделка
+								подходят для разных стилей интерьера. Обеспечивает шумоизоляцию.</p>
+						</div>
+						<div class="advantages__characteristic">
+							<div class="advantages__characteristic-block">
+								<img src="images/loops-photo.svg" alt="loops" class="advantages__characteristic-img">
+								<p class="advantages__characteristic-title">Петли</p>
+							</div>
+							<p class="text text_left ">Прочные материалы для надежного крепления. Плавное движение для удобства
+								использования.</p>
+						</div>
+					</div>
+					<div class="advantages__door">
+						<div class="advantages__door-block">
+							<img src="images/doors.png" alt="door" class="advantages__door-img">
+							<button class="advantages__door-button_start button_plus text text-color_white">+</button>
+							<button class="advantages__door-button_mid-1 button_plus text text-color_white">+</button>
+							<button class="advantages__door-button_mid-2  button_plus text text-color_white">+</button>
+							<button class="advantages__door-button_end button_plus text text-color_white">+</button>
+						</div>
+						<a href="" class="button">Заказать консультацию</a>
+					</div>
+					<div class="advantages__info">
+						<div class="advantages__characteristic">
+							<div class="advantages__characteristic-block">
+								<img src="images/door frame-photo.svg" alt="box" class="advantages__characteristic-img">
+								<p class="advantages__characteristic-title">Коробка</p>
+							</div>
+							<p class="text text_left ">Профессиональная установка, коробка разработана с учетом правильных размеров и
+								специальных функций для легкой и точной установки двери.</p>
+						</div>
+						<div class="advantages__characteristic">
+							<div class="advantages__characteristic-block">
+								<img src="images/lock-photo.svg" alt="locks" class="advantages__characteristic-img locks">
+								<p class="advantages__characteristic-title">Замки</p>
+							</div>
+
+							<p class="text text_left ">Надежная защита помещения. Прост в использовании. Высокое качество и
+								долговечность.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="advantages-of-cooperation" id="advantages_of_cooperation">
+			<div class="container-big">
+				<div class="advantages-of-cooperation_bg_img">
+					<div class="advantages-of-cooperation_bg-color ">
+						<div class="container ">
+							<div class="advantages-of-cooperation__flex ">
+								<h2 class="title text-color_white"><span class="gold">Преимущества</span> сотрудничества с нами</h2>
+								<div class="advantages-of-cooperation__blocks">
+									<div class="advantages-of-cooperation__block">
+										<p class="advantages-of-cooperation__number">01.</p>
+										<p class="text text-color_white text_left">Гарантируем высокое качество наших дверей благодаря
+											использованию прочных материалов и профессиональному изготовлению.</p>
+									</div>
+									<div class="advantages-of-cooperation__block">
+										<p class="advantages-of-cooperation__number">02.</p>
+										<p class="text text-color_white text_left">Наша компания предлагает широкий выбор моделей и отделок,
+											подходящих для любых помещений и архитектурных решений.</p>
+									</div>
+									<div class="advantages-of-cooperation__block">
+										<p class="advantages-of-cooperation__number">03.</p>
+										<p class="text text-color_white text_left">Мы гарантируем надежность, соблюдение сроков и стремимся
+											к долгосрочному взаимовыгодному сотрудничеству.</p>
+									</div>
+									<div class="advantages-of-cooperation__block">
+										<p class="advantages-of-cooperation__number">04.</p>
+										<p class="text text-color_white text_left">Мы предлагаем застройщикам индивидуальный подход,
+											учитывая их проекты и требования при выборе дверей. Мы готовы адаптироваться к различным стилям и
+											дизайнам интерьеров.</p>
+									</div>
+									<div class="advantages-of-cooperation__block">
+										<p class="advantages-of-cooperation__number">05.</p>
+										<p class="text text-color_white text_left">Мы предлагаем застройщикам индивидуальный подход,
+											учитывая их проекты и требования при выборе дверей. Мы готовы адаптироваться к различным стилям и
+											дизайнам интерьеров.</p>
+									</div>
+									<div class="advantages-of-cooperation__block">
+										<p class="advantages-of-cooperation__number">06.</p>
+										<p class="text text-color_white text_left">Предоставляем полную техническую поддержку и консультации
+											застройщикам на протяжении всего сотрудничества, гарантируя успешную установку дверей.</p>
+									</div>
+								</div>
+
+							</div>
+							<a href="" class="button">Начать сотрудничество</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</section>
+		<section class="catalog indent" id="catalog">
+			<h2 class="title"><span class="gold">Каталог</span> дверей</h2>
+			<div class="swiper" id="catalog-door">
+				<div class=" swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="catalog__door">
+							<div class="catalog__door-left">
+								<img src="images/door1.png" alt="door" class="catalog__door-img">
+								<div class="catalog__door-color">
+									<h2 class="catalog__color-title">Виды декора двери:</h2>
+									<img src="images/color1.svg" alt="color1" class="catalog__img">
+									<img src="images/color2.svg" alt="color2" class="catalog__img">
+									<img src="images/color3.svg" alt="color3" class="catalog__img">
+									<img src="images/color3.svg" alt="color4" class="catalog__img">
+								</div>
+								<div class="catalog__door-glass">
+									<h2 class="catalog__glass-title">Виды стекл:</h2>
+									<img src="images/glass1.svg" alt="glass1" class="catalog__img ">
+									<img src="images/glass2.svg" alt="glass2" class="catalog__img ">
+									<img src="images/glass3.svg" alt="glass3" class="catalog__img ">
+									<img src="images/glass4.png" alt="glass4" class="catalog__img ">
+								</div>
+							</div>
+							<div class="catalog__door-right">
+								<h2 class="catalog__color-title catalog__color-title_big">Дверное полотно Ps-33 ash white</h2>
+								<p class="text text_left">Дверь Делла BLK новый стиль Коллекция – ностра Модель – Делла BLK. Дверные
+									полотна коллекции "НОСТРА" облицованы качественной ПВХ DeLuxe пленкой известных мировых
+									производителей.</p>
+								<p class="catalog__color-title">Характеристики:</p>
+								<p class="text text_left">
+									Высота: 2000 мм<br>
+									Ширина: 600, 700, 800, 900 мм<br>
+									Толщина: 40 мм<br>
+									Страна изготовитель: Россия
+								</p>
+								<p class="catalog__color-title">Стоимость:</p>
+								<p class="catalog__cost">от 34 000 руб.</p>
+								<a href="" class="button catalog__button">Заказать консультацию</a>
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-slide">
+						<div class="catalog__door">
+							<div class="catalog__door-left">
+								<img src="images/door2.png" alt="door" class="catalog__door-img">
+								<div class="catalog__door-color">
+									<h2 class="catalog__color-title">Виды декора двери:</h2>
+									<img src="images/color1.svg" alt="color1" class="catalog__img">
+									<img src="images/color2.svg" alt="color2" class="catalog__img">
+									<img src="images/color3.svg" alt="color3" class="catalog__img">
+									<img src="images/color4.svg" alt="color4" class="catalog__img">
+								</div>
+								<div class="catalog__door-glass ">
+									<h2 class="catalog__glass-title">Виды стекл:</h2>
+									<img src="images/glass1.svg" alt="glass1" class="catalog__img">
+									<img src="images/glass2.svg" alt="glass2" class="catalog__img">
+									<img src="images/glass3.svg" alt="glass3" class="catalog__img">
+									<img src="images/glass4.svg" alt="glass4" class="catalog__img">
+								</div>
+							</div>
+							<div class="catalog__door-right">
+								<h2 class="catalog__color-title catalog__color-title_big">Дверное полотно Ps-33 ash white</h2>
+								<p class="text text_left">Дверь Делла BLK новый стиль Коллекция – ностра Модель – Делла BLK. Дверные
+									полотна коллекции "НОСТРА" облицованы качественной ПВХ DeLuxe пленкой известных мировых
+									производителей.</p>
+								<p class="catalog__color-title">Характеристики:</p>
+								<p class="text text_left">
+									Высота: 2000 мм<br>
+									Ширина: 600, 700, 800, 900 мм<br>
+									Толщина: 40 мм<br>
+									Страна изготовитель: Россия
+								</p>
+								<p class="catalog__color-title">Стоимость:</p>
+								<p class="catalog__cost">от 34 000 руб.</p>
+								<a href="" class="button catalog__button">Заказать консультацию</a>
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-slide">
+						<div class="catalog__door">
+							<div class="catalog__door-left">
+								<img src="images/door3.png" alt="door" class="catalog__door-img">
+								<div class="catalog__door-color">
+									<h2 class="catalog__color-title">Виды декора двери:</h2>
+									<img src="images/color1.svg" alt="color1" class="catalog__img">
+									<img src="images/color2.svg" alt="color2" class="catalog__img">
+									<img src="images/color3.svg" alt="color3" class="catalog__img">
+									<img src="images/color4.svg" alt="color4" class="catalog__img">
+								</div>
+								<div class="catalog__door-glass">
+									<h2 class="catalog__glass-title">Виды стекл:</h2>
+									<img src="images/glass1.svg" alt="glass1" class="catalog__img">
+									<img src="images/glass2.svg" alt="glass2" class="catalog__img">
+									<img src="images/glass3.svg" alt="glass3" class="catalog__img">
+									<img src="images/glass4.svg" alt="glass4" class="catalog__img">
+								</div>
+							</div>
+							<div class="catalog__door-right">
+								<h2 class="catalog__color-title catalog__color-title_big">Дверное полотно Ps-33 ash white</h2>
+								<p class="text text_left">Дверь Делла BLK новый стиль Коллекция – ностра Модель – Делла BLK. Дверные
+									полотна коллекции "НОСТРА" облицованы качественной ПВХ DeLuxe пленкой известных мировых
+									производителей.</p>
+								<p class="catalog__color-title">Характеристики:</p>
+								<p class="text text_left">
+									Высота: 2000 мм<br>
+									Ширина: 600, 700, 800, 900 мм<br>
+									Толщина: 40 мм<br>
+									Страна изготовитель: Россия
+								</p>
+								<p class="catalog__color-title">Стоимость:</p>
+								<p class="catalog__cost">от 34 000 руб.</p>
+								<a href="" class="button catalog__button">Заказать консультацию</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="catalog__door">
+							<div class="catalog__door-left">
+								<img src="images/door1.png" alt="door" class="catalog__door-img">
+								<div class="catalog__door-color">
+									<h2 class="catalog__color-title">Виды декора двери:</h2>
+									<img src="images/color1.svg" alt="color1" class="catalog__img">
+									<img src="images/color2.svg" alt="color2" class="catalog__img">
+									<img src="images/color3.svg" alt="color3" class="catalog__img">
+									<img src="images/color4.svg" alt="color4" class="catalog__img">
+								</div>
+								<div class="catalog__door-glass">
+									<h2 class="catalog__glass-title">Виды стекл:</h2>
+									<img src="images/glass1.svg" alt="glass1" class="catalog__img">
+									<img src="images/glass2.svg" alt="glass2" class="catalog__img">
+									<img src="images/glass3.svg" alt="glass3" class="catalog__img">
+									<img src="images/glass4.svg" alt="glass4" class="catalog__img">
+								</div>
+							</div>
+							<div class="catalog__door-right">
+								<h2 class="catalog__color-title catalog__color-title_big">Дверное полотно
+									Ps-33 ash white</h2>
+								<p class="text text_left">Дверь Делла BLK новый стиль Коллекция – ностра Модель – Делла BLK. Дверные
+									полотна коллекции "НОСТРА" облицованы качественной ПВХ DeLuxe пленкой известных мировых
+									производителей.</p>
+								<p class="catalog__color-title">Характеристики:</p>
+								<p class="text text_left">
+									Высота: 2000 мм<br>
+									Ширина: 600, 700, 800, 900 мм<br>
+									Толщина: 40 мм<br>
+									Страна изготовитель: Россия
+								</p>
+								<p class="catalog__color-title">Стоимость:</p>
+								<p class="catalog__cost">от 34 000 руб.</p>
+								<a href="" class="button catalog__button">Заказать консультацию</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="catalog__arrow 
+              catalog__arrow_left arrow_hover swiper-button-prev"><img src="images/arrow.svg" alt="arrow"
+						class="catalog_arrow__img "></div>
+				<div class="catalog__arrow_right arrow_hover swiper-button-next"><img src="images/arrow.svg" alt="arrow"
+						class="catalog_arrow__img"></div>
+			</div>
+			<h3 class="catalog__accessories-title">Каталог фурнитуры</h3>
+			<div class="swiper" id="accessories">
+				<div class=" swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="catalog__accessories-block">
+							<img src="images/loop.png" alt="accessories_img" class="catalog__accessories-img">
+							<p class="catalog__accessories-text">Петля дверная врезная Safita 125*75*3 4BB серый</p>
+						</div>
+
+					</div>
+					<div class="swiper-slide">
+						<div class="catalog__accessories-block">
+							<img src="images/pen.png" alt="accessories_img"
+								class="catalog__accessories-img accessories__img-padding ">
+							<p class="catalog__accessories-text">Ручка дверная MH- 21 SH/BN</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="catalog__accessories-block">
+							<img src="images/loop2.png" alt="accessories_img" class="catalog__accessories-img">
+							<p class="catalog__accessories-text">Петля дверная врезная Safita 125*75*3 4BB BLACK черный</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="catalog__accessories-block">
+							<img src="images/pen2.png" alt="accessories_img" class="catalog__accessories-img ">
+							<p class="catalog__accessories-text">Ручка дверна на планке Forme Naxos 215/P35(Atlas)</p>
+						</div>
+
+					</div>
+					<div class="swiper-slide">
+						<div class="catalog__accessories-block">
+							<img src="images/loop.png" alt="accessories_img" class="catalog__accessories-img">
+							<p class="catalog__accessories-text">Петля дверная врезная Safita 125*75*3 4BB серый</p>
+						</div>
+
+					</div>
+					<div class="swiper-slide">
+						<div class="catalog__accessories-block">
+							<img src="images/pen.png" alt="accessories_img"
+								class="catalog__accessories-img accessories__img-padding ">
+							<p class="catalog__accessories-text">Ручка дверная MH- 21 SH/BN</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="catalog__accessories-block">
+							<img src="images/loop2.png" alt="accessories_img" class="catalog__accessories-img">
+							<p class="catalog__accessories-text">Петля дверная врезная Safita 125*75*3 4BB BLACK черный</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="catalog__accessories-block">
+							<img src="images/pen2.png" alt="accessories_img" class="catalog__accessories-img ">
+							<p class="catalog__accessories-text">Ручка дверна на планке Forme Naxos 215/P35(Atlas)</p>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__arrow arrow_hover  catalog__arrow_left swiper-button-prev catalog__accessories_left"><img
+						src="images/arrow.svg " alt="arrow" class="catalog_arrow__img "></div>
+				<div class="catalog__arrow catalog__arrow_right arrow_hover swiper-button-next catalog__accessories_right"><img
+						src="images/arrow.svg" alt="arrow" class="catalog_arrow__img"></div>
+			</div>
+		</section>
+		<section class="servis" id="servis">
+			<div class="container-big">
+				<div class="servis__blocks">
+					<div class="servis__block-left">
+						<div class="servis__block-bg-color">
+							<div class="container-left">
+								<div class="servis__block">
+									<h2 class="title text-color_white text_left">Полный сервис услуг</h2>
+									<p class="text text_left text-color_white">При заказе установки двери у нас, вы получает не только
+										высококачественные двери, но и полный спектр услуг по их установке. Мы обеспечиваем профессиональный
+										монтаж и гарантируем качественный результат. Кроме того, для наших клиентов-застройщиков мы
+										предлагаем СПЕЦИАЛЬНУЮ СКИДКУ на установку двери.<br><br><br>Мы ценим ваше доверие и стремимся
+										обеспечить вам удобство и выгодные условия сотрудничества.</p>
+									<a href="" class="button">Заказать установку</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="servis__block-right">
+						<div class="servis__door-block">
+							<div class="servis__door-img">
+								<img src="images/door.png" alt="door" class="servis__door-img_img">
+								<button class="button_plus text text-color_white servis__button_start">+</button>
+								<p class="servis__door-text text_left text servis__door-text_start">Сохраним ремонт (обои, плитку) в
+									целостности</p>
+								<button class="button_plus text text-color_white servis__button_mid">+</button>
+								<p class="servis__door-text text_left text servis__door-text_mid">Установим дверь за 1 - 1,5 часа</p>
+								<button class="button_plus text text-color_white servis__button_end">+</button>
+								<p class="servis__door-text text_left text servis__door-text_end">Дверь прекрасно открывается, не
+									затрагивает коробку</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="creat indent" id="creat_your_door">
+			<div class="container">
+				<h2 class="title"><span class="gold">Создай</span> свою дверь</h2>
+				<div class="creat__block ">
+					<div class="creat__door-block">
+						<div class="creat__door-left">
+							<div class="creat__door-background">
+								<img src="images/void_door.png" alt="void_door" class="creat__door-img">
+							</div>
+							<p class="creat__door-text"><span class="gold">20% скидка</span><br>на установку двери</p>
+						</div>
+						<div class="creat__door-right">
+							<div class="creat__door-selection">
+								<h2 class="creat__text">Выбор двери:</h2>
+								<div class="creat__choice-doors">
+									<div class="creat__choice-door">
+										<label for="choice_radio1" class="creat__radio">
+											<img src="images/choice_door1.png" alt="door" class="creat__radio-img">
+											<p class="creat__radio-text text">PS-33 wenge</p>
+											<input type="radio" value="1" id="choice_radio1" name="check_box" class="creat__radio-checkbox">
+											<span></span>
+										</label>
+									</div>
+									<div class="creat__choice-door">
+										<label for="choice_radio2" class="creat__radio">
+											<img src="images/choice_door2.png" alt="door" class="creat__radio-img">
+											<p class="creat__radio-text text">PS-33 wenge</p>
+											<input type="radio" value="2" id="choice_radio2" name="check_box" class="creat__radio-checkbox">
+											<span></span>
+										</label>
+									</div>
+									<div class="creat__choice-door">
+										<label for="choice_radio3" class="creat__radio">
+											<img src="images/choice_door3.png" alt="door" class="creat__radio-img">
+											<p class="creat__radio-text text">PS-17 wenge</p>
+											<input type="radio" value="3" id="choice_radio3" name="check_box" class="creat__radio-checkbox">
+											<span></span>
+										</label>
+									</div>
+									<div class="creat__choice-door">
+										<label for="choice_radio4" class="creat__radio">
+											<img src="images/choice_door4.png" alt="door" class="creat__radio-img">
+											<p class="creat__radio-text text">PSK-8 riviera cru</p>
+											<input type="radio" value="4" id="choice_radio4" name="check_box" class="creat__radio-checkbox">
+											<span></span>
+										</label>
+									</div>
+									<div class="creat__choice-door">
+										<label for="choice_radio5" class="creat__radio">
+											<img src="images/choice_door5.png" alt="door" class="creat__radio-img">
+											<p class="creat__radio-text text">PSK-10 riviera ice</p>
+											<input type="radio" value="5" id="choice_radio5" name="check_box" class="creat__radio-checkbox">
+											<span></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="creat__door-color">
+								<h2 class="creat__text">Выбор декора двери:</h2>
+								<div class="creat__choice-color">
+									<label class="creat__choice-color-radio" for="color1">
+										<img src="images/color1.svg" alt="dor_color" class="creat__choice-color-radio_img">
+										<input type="radio" id="color1" value="1" class="creat__choice-color-radio_checkbox"
+											name="check_box_color">
+										<span></span>
+									</label>
+									<label class="creat__choice-color-radio" for="color2">
+										<img src="images/color2.svg" alt="dor_color" class="creat__choice-color-radio_img">
+										<input type="radio" id="color2" value="2" class="creat__choice-color-radio_checkbox"
+											name="check_box_color">
+										<span></span>
+									</label>
+									<label class="creat__choice-color-radio" for="color3">
+										<img src="images/color3.svg" alt="dor_color" class="creat__choice-color-radio_img">
+										<input type="radio" id="color3" value="3" class="creat__choice-color-radio_checkbox"
+											name="check_box_color">
+										<span></span>
+									</label>
+									<label class="creat__choice-color-radio" for="color4">
+										<img src="images/color4.svg" alt="dor_color" class="creat__choice-color-radio_img">
+										<input type="radio" id="color4" value="4" class="creat__choice-color-radio_checkbox"
+											name="check_box_color">
+										<span></span>
+									</label>
+								</div>
+							</div>
+							<div class="creat__door-accessories">
+								<h2 class="creat__text">Выбор фурнитруты:</h2>
+								<div class="swiper creat__choice-accessories" id="penswiper">
+
+									<div class="swiper-wrapper creat__choice-accessories-blocks">
+										<div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen">
+											<label for="choice_radio11" class="creat__choice-accessories-radio">
+												<img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
+												<p class="creat__choice-accessories-radio_text">Престиж никель</p>
+												<input type="radio" value="1" id="choice_radio11" name="check_box"
+													class="creat__choice-accessories-radio_checkbox">
+												<span></span>
+											</label>
+										</div>
+										<div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen">
+											<label for="choice_radio12" class="creat__choice-accessories-radio">
+												<img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
+												<p class="creat__choice-accessories-radio_text">Елит</p>
+												<input type="radio" value="2" id="choice_radio12" name="check_box"
+													class="creat__choice-accessories-radio_checkbox">
+												<span></span>
+											</label>
+										</div>
+										<div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen">
+											<label for="choice_radio13" class="creat__choice-accessories-radio">
+												<img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
+												<p class="creat__choice-accessories-radio_text">VIP латунь</p>
+												<input type="radio" value="3" id="choice_radio13" name="check_box"
+													class="creat__choice-accessories-radio_checkbox">
+												<span></span>
+											</label>
+
+										</div>
+										<div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen">
+											<label for="choice_radio14" class="creat__choice-accessories-radio">
+												<img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
+												<p class="creat__choice-accessories-radio_text">Модерн латунь</p>
+												<input type="radio" value="4" id="choice_radio14" name="check_box"
+													class="creat__choice-accessories-radio_checkbox">
+												<span></span>
+											</label>
+										</div>
+										<div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen">
+											<label for="choice_radio11" class="creat__choice-accessories-radio">
+												<img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
+												<p class="creat__choice-accessories-radio_text">Престиж никель</p>
+												<input type="radio" value="1" id="choice_radio11" name="check_box"
+													class="creat__choice-accessories-radio_checkbox">
+												<span></span>
+											</label>
+										</div>
+										<div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen">
+											<label for="choice_radio12" class="creat__choice-accessories-radio">
+												<img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
+												<p class="creat__choice-accessories-radio_text">Елит</p>
+												<input type="radio" value="2" id="choice_radio12" name="check_box"
+													class="creat__choice-accessories-radio_checkbox">
+												<span></span>
+											</label>
+										</div>
+										<div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen">
+											<label for="choice_radio13" class="creat__choice-accessories-radio">
+												<img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
+												<p class="creat__choice-accessories-radio_text">VIP латунь</p>
+												<input type="radio" value="3" id="choice_radio13" name="check_box"
+													class="creat__choice-accessories-radio_checkbox">
+												<span></span>
+											</label>
+
+										</div>
+										<div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen">
+											<label for="choice_radio14" class="creat__choice-accessories-radio">
+												<img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
+												<p class="creat__choice-accessories-radio_text">Модерн латунь</p>
+												<input type="radio" value="4" id="choice_radio14" name="check_box"
+													class="creat__choice-accessories-radio_checkbox">
+												<span></span>
+											</label>
+										</div>
+										<div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen">
+											<label for="choice_radio11" class="creat__choice-accessories-radio">
+												<img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
+												<p class="creat__choice-accessories-radio_text">Престиж никель</p>
+												<input type="radio" value="1" id="choice_radio11" name="check_box"
+													class="creat__choice-accessories-radio_checkbox">
+												<span></span>
+											</label>
+										</div>
+										<div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen">
+											<label for="choice_radio12" class="creat__choice-accessories-radio">
+												<img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
+												<p class="creat__choice-accessories-radio_text">Елит</p>
+												<input type="radio" value="2" id="choice_radio12" name="check_box"
+													class="creat__choice-accessories-radio_checkbox">
+												<span></span>
+											</label>
+										</div>
+										<div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen">
+											<label for="choice_radio13" class="creat__choice-accessories-radio">
+												<img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
+												<p class="creat__choice-accessories-radio_text">VIP латунь</p>
+												<input type="radio" value="3" id="choice_radio13" name="check_box"
+													class="creat__choice-accessories-radio_checkbox">
+												<span></span>
+											</label>
+
+										</div>
+										<div id="choice__accessories__slider" class="swiper-slide creat__choice-accessories-pen">
+											<label for="choice_radio14" class="creat__choice-accessories-radio">
+												<img src="images/pen5.png" alt="door" class="creat__choice-accessories-radio_img">
+												<p class="creat__choice-accessories-radio_text">Модерн латунь</p>
+												<input type="radio" value="4" id="choice_radio14" name="check_box"
+													class="creat__choice-accessories-radio_checkbox">
+												<span></span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<button
+									class="creat__choice-accessories-button_right creat__choice-accessories-arrow_hover swiper-button-next">
+									<img src="images/arrow.svg" alt="" class="creat__choice-accessories-button_img">
+								</button>
+								<button
+									class="creat__choice-accessories-button_left creat__choice-accessories-arrow_hover swiper-button-prev">
+									<img src="images/arrow.svg" alt="" class="creat__choice-accessories-button_img">
+								</button>
+								<a href="" class="button">
+									Заказать Консультацию
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about container-big" id="about">
+			<div class="container-big">
+				<div class="about__background-color ">
+					<div class="about__flex">
+						<div class="about__info">
+							<div class="container-left">
+								<h2 class="title text_left text-color_white">О нас</h2>
+								<p class="text text_left text-color_white">Мы - компания, специализирующаяся на производстве<br>и
+									установке межкомнатных дверей высокого качества. Мы<br>стремимся предложить нашим клиентам
+									широкий<br>ассортимент моделей, отвечающих самым требовательным<br>вкусам и стилям интерьера.</p>
+								<a href="" class="button">Смотреть 3-D тур</a>
+							</div>
+						</div>
+						<div class="about__number">
+							<div class="about__background-img">
+								<div class="about__background-color">
+									<div class="container-right">
+										<div class="about__number-blocks">
+											<div class="about__number-block bottom-line">
+												<h2 class="about__number-title">200 +</h2>
+												<p class="text text_left text-color_white">установленных дверей ежегодно</p>
+											</div>
+											<div class="about__number-block  bottom-line">
+												<h2 class="about__number-title">95%</h2>
+												<p class="text text_left text-color_white">клиентов рекомендуют нас своим знакомым:</p>
+											</div>
+											<div class="about__number-block about__block-width">
+												<h2 class="about__number-title">100%</h2>
+												<p class="text text_left text-color_white">удовлетворенность клиентов</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="implemented__projects  indent" id="implemented_projects">
+			<div class="container_big">
+				<h2 class="title"><span class="gold">Реализованные</span> проекты</h2>
+				<div class="implemented__projects-swiper swiper" id="implemented_project">
+					<div class=" swiper-wrapper">
+						<div class="implemented__projects-block swiper-slide">
+							<div class="implemented__projects-button-block">
+								<button class="implemented__projects-button"></button>
+							</div>
+							<p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
+						</div>
+						<div class="implemented__projects-block swiper-slide">
+							<div class="implemented__projects-button-block">
+								<button class="implemented__projects-button"></button>
+							</div>
+							<p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
+						</div>
+						<div class="implemented__projects-block1 swiper-slide">
+							<div class="implemented__projects-button-block">
+								<button class="implemented__projects-button"></button>
+							</div>
+							<p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
+						</div>
+						<div class="implemented__projects-block swiper-slide">
+							<div class="implemented__projects-button-block">
+								<button class="implemented__projects-button"></button>
+							</div>
+							<p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
+						</div>
+						<div class="implemented__projects-block swiper-slide">
+							<div class="implemented__projects-button-block">
+								<button class="implemented__projects-button"></button>
+							</div>
+							<p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
+						</div>
+						<div class="implemented__projects-block1 swiper-slide">
+							<div class="implemented__projects-button-block">
+								<button class="implemented__projects-button"></button>
+							</div>
+							<p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
+						</div>
+						<div class="implemented__projects-block swiper-slide">
+							<div class="implemented__projects-button-block">
+								<button class="implemented__projects-button"></button>
+							</div>
+							<p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
+						</div>
+						<div class="implemented__projects-block swiper-slide">
+							<div class="implemented__projects-button-block">
+								<button class="implemented__projects-button"></button>
+							</div>
+							<p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
+						</div>
+						<div class="implemented__projects-block1 swiper-slide">
+							<div class="implemented__projects-button-block">
+								<button class="implemented__projects-button"></button>
+							</div>
+							<p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
+						</div>
+						<div class="implemented__projects-block swiper-slide">
+							<div class="implemented__projects-button-block">
+								<button class="implemented__projects-button"></button>
+							</div>
+							<p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
+						</div>
+						<div class="implemented__projects-block swiper-slide">
+							<div class="implemented__projects-button-block">
+								<button class="implemented__projects-button"></button>
+							</div>
+							<p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
+						</div>
+						<div class="implemented__projects-block1 swiper-slide">
+							<div class="implemented__projects-button-block">
+								<button class="implemented__projects-button"></button>
+							</div>
+							<p class="implemented__text">Установка межкомнатной двери в МК Мир</p>
+						</div>
+					</div>
+					<button class="implemented__arrow-left implemented__arrow_hover  swiper-button-prev swiper-button-next"><img
+							src="images/arrow.svg" alt="arrow" class="project_arrow_img"></button> <button
+						class="implemented__arrow-right implemented__arrow_hover swiper-button-next"><img src="images/arrow.svg"
+							alt="arrow" class="project_arrow_img"></button>
+				</div>
+			</div>
+		</section>
+		<section class="our-contact" id="our_contact">
+			<h2 class="title"><span class="gold">Наши</span> контакты</h2>
+			<div class="our-contact__info">
+				<div class="container">
+					<div class="our-contact__info-flex">
+						<div class="our-contact__info-block our-contact__info-block_width">
+							<img src="images/icon-geo.png" alt="gps" class="our-contact__gps_img">
+							<a href="" class="our-contact__text">Москва, ул. Профсоюзная 123</a>
+						</div>
+
+						<div class="our-contact__info-block">
+							<img src="images/icon-email.svg" alt="mail" class="our_contact__img">
+							<a href="" class="our-contact__text">info@example.com</a>
+						</div>
+
+						<div class="our-contact__phone">
+							<img src="images/whots.svg" alt="whotsaap" class="our-contact__phone__img">
+							<a href="" class="our-contact__phone-text">7(495) 088-18-08</a>
+						</div>
+
+						<a href="" class="our-contact__soc-net">Instagram</a>
+						<a href="" class="our-contact__soc-net">Facebook</a>
+					</div>
+				</div>
+			</div>
+			<div class="our-contact__block container_big">
+				<div class="map" id="map"></div>
+				<form action="/" class="our-contact__form">
+					<div class="container-right">
+						<div class="our-contact__form-flex">
+							<h2 class="our-contact__title">Форма связи с нами:</h2>
+							<div class="our-contact__input-block">
+								<p class="our-contact__form-text">Ваше имя*</p>
+								<input type="text" name="name" placeholder="Введите имя" class="our-contact__input">
+							</div>
+							<div class="our-contact__input-block">
+								<p class="our-contact__form-text">Ваш телефон*</p>
+								<input type="text" name="phone" placeholder="Введите телефон" class="our-contact__input">
+							</div>
+							<div class="our-contact__input-block">
+								<p class="our-contact__form-text">Ваше email*</p>
+								<input type="email" name="email" placeholder="Ваша почта" class="our-contact__input">
+							</div>
+							<a href="" class="button">Отправить заявку</a>
+							<a href="" class="our-contact__approval">Нажимая на кнопку, вы даете согласие на обработку<br> ваших
+								персональных данных</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__flex">
+				<p class="footer__text">© Все права защищены</p>
+				<a href="#header" class="footer__button"><img src="images/arrow_footer.svg" alt="arrow"
+						class="footer_arrow ">Наверх</a>
+				<p class="footer__text text_derection">Разработка сайта</p>
+			</div>
+		</div>
+	</footer>
+	<script
+		src="https://api-maps.yandex.ru/2.0-stable/?apikey=ваш API-ключ&?apikey=ваш API-ключ&load=package.standard&lang=ru-RU"></script>
+	<script src="./js/swiper.js"></script>
+	<script src="./js/slider.js"></script>
+	<script src="./js/burger.js"></script>
+	<script src="./js/button.js"></script>
+	<script src="./js/map.js"></script>
 </body>
